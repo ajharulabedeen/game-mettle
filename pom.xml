@@ -10,7 +10,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     
-    
     <build>
         <plugins>
             <plugin>
@@ -83,8 +82,17 @@
                     </archive>
                 </configuration>
             </plugin>
+
+            <!--<resources>-->
+                <!--<resource>-->
+                    <!--<directory>src/resources</directory>-->
+                <!--</resource>-->
+            <!--</resources>-->
+            
         </plugins>
     </build>
+
+
     <profiles>
         <profile>
             <id>openjfx</id>
