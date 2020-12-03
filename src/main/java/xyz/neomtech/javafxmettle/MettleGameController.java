@@ -36,16 +36,15 @@ public class MettleGameController {
     @FXML
     private void image_11ClickAction(MouseEvent me) throws Exception {
         System.out.println("CLikced on Image 11!" + image_1_1.toString());
-//        ImageView iv = (ImageView) me.getSource();
-//        System.out.println(iv.getId());
-        
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+
         String imageName = Utils.imageName.get(rand.nextInt(Utils.imageName.size() - 1));
 
         try {
             Image image = new Image("images/" + imageName);
-//            Image image = new Image("images/cicrle_1.8.png");
-            ImageView imageView = new ImageView(image);
-            image_1_1.setImage(image);
+//            image_1_1.setImage(image);
+            iv.setImage(image);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("imageNameError : " + imageName);
