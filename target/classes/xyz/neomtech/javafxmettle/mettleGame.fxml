@@ -27,7 +27,7 @@
       <Label layoutX="14.0" layoutY="301.0" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Card Remains" />
       <HBox alignment="CENTER" layoutX="174.0" layoutY="14.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
          <children>
-            <ImageView id="image_1.1" fitHeight="72.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image_1_1" fitHeight="72.0" fitWidth="112.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
