@@ -14,16 +14,16 @@ public class MettleGameController {
     Random rand = new Random();
 
     //    row one.
-    @FXML
-    private ImageView image_1_1;
-    @FXML
-    private ImageView image_1_2;
-    @FXML
-    private ImageView image_1_3;
-    @FXML
-    private ImageView image_1_4;
-    @FXML
-    private ImageView image_1_5;
+//    @FXML
+//    private ImageView image_1_1;
+//    @FXML
+//    private ImageView image_1_2;
+//    @FXML
+//    private ImageView image_1_3;
+//    @FXML
+//    private ImageView image_1_4;
+//    @FXML
+//    private ImageView image_1_5;
 
     //    @FXML
 //    private ImageView e2b_imageView_to_show_mneaing;
@@ -35,7 +35,7 @@ public class MettleGameController {
 
     @FXML
     private void image_11ClickAction(MouseEvent me) throws Exception {
-        System.out.println("CLikced on Image 11!" + image_1_1.toString());
+//        System.out.println("CLikced on Image 11!" + image_1_1.toString());
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
 
