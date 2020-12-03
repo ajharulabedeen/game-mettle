@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="651.0" prefWidth="778.0" style="-fx-background-color: biscut;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="651.0" prefWidth="778.0" style="-fx-background-color: biscut;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.neomtech.javafxmettle.MettleGameController">
    <children>
       <VBox layoutX="14.0" layoutY="14.0" prefHeight="213.0" prefWidth="100.0">
          <children>
