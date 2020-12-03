@@ -27,7 +27,7 @@
       <Label layoutX="14.0" layoutY="301.0" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Card Remains" />
       <HBox alignment="CENTER" layoutX="174.0" layoutY="14.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
          <children>
-            <ImageView fx:id="image_1_1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image_1_1" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
@@ -35,22 +35,22 @@
                   <Insets left="5.0" />
                </HBox.margin>
             </ImageView>
-            <ImageView id="image_1_2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_1_2" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_1_3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_1_3" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_1_4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_1_4" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_1_5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_1_5" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
@@ -63,9 +63,9 @@
             <Insets bottom="10.0" left="10.0" top="10.0" />
          </padding>
       </HBox>
-      <HBox alignment="CENTER" layoutX="176.0" layoutY="767.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
+      <HBox alignment="CENTER" layoutX="186.0" layoutY="435.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
          <children>
-            <ImageView id="image_2.1" fitHeight="72.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_2.1" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
@@ -73,22 +73,22 @@
                   <Insets left="5.0" />
                </HBox.margin>
             </ImageView>
-            <ImageView id="image_2.2" fitHeight="72.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_2.2" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_2.3" fitHeight="78.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_2.3" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_2.4" fitHeight="79.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_2.4" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_2.5" fitHeight="72.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_2.5" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
@@ -101,9 +101,9 @@
             <Insets bottom="10.0" left="10.0" top="10.0" />
          </padding>
       </HBox>
-      <HBox alignment="CENTER" layoutX="172.0" layoutY="309.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
+      <HBox alignment="CENTER" layoutX="179.0" layoutY="214.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
          <children>
-            <ImageView id="image_3.1" fitHeight="72.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_3.1" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
@@ -111,22 +111,22 @@
                   <Insets left="5.0" />
                </HBox.margin>
             </ImageView>
-            <ImageView id="image_3.2" fitHeight="72.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_3.2" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_3.3" fitHeight="78.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_3.3" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_3.4" fitHeight="79.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_3.4" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_3.5" fitHeight="72.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_3.5" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
@@ -139,9 +139,9 @@
             <Insets bottom="10.0" left="10.0" top="10.0" />
          </padding>
       </HBox>
-      <HBox alignment="CENTER" layoutX="174.0" layoutY="414.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
+      <HBox alignment="CENTER" layoutX="195.0" layoutY="661.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
          <children>
-            <ImageView id="image_4.1" fitHeight="72.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_4.1" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
@@ -149,98 +149,22 @@
                   <Insets left="5.0" />
                </HBox.margin>
             </ImageView>
-            <ImageView id="image_4.2" fitHeight="72.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_4.2" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_4.3" fitHeight="78.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_4.3" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_4.4" fitHeight="79.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_4.4" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>
             </ImageView>
-            <ImageView id="image_4.5" fitHeight="72.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-               <HBox.margin>
-                  <Insets right="10.0" />
-               </HBox.margin>
-            </ImageView>
-         </children>
-         <padding>
-            <Insets bottom="10.0" left="10.0" top="10.0" />
-         </padding>
-      </HBox>
-      <HBox alignment="CENTER" layoutX="181.0" layoutY="545.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
-         <children>
-            <ImageView id="image_5.1" fitHeight="72.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-               <HBox.margin>
-                  <Insets left="5.0" />
-               </HBox.margin>
-            </ImageView>
-            <ImageView id="image_5.2" fitHeight="72.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-            </ImageView>
-            <ImageView id="image_5.3" fitHeight="78.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-            </ImageView>
-            <ImageView id="image_5.4" fitHeight="79.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-            </ImageView>
-            <ImageView id="image_5.5" fitHeight="72.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-               <HBox.margin>
-                  <Insets right="10.0" />
-               </HBox.margin>
-            </ImageView>
-         </children>
-         <padding>
-            <Insets bottom="10.0" left="10.0" top="10.0" />
-         </padding>
-      </HBox>
-      <HBox alignment="CENTER" layoutX="172.0" layoutY="660.0" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
-         <children>
-            <ImageView id="image_6.1" fitHeight="72.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-               <HBox.margin>
-                  <Insets left="5.0" />
-               </HBox.margin>
-            </ImageView>
-            <ImageView id="image_6.2" fitHeight="72.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-            </ImageView>
-            <ImageView id="image_6.3" fitHeight="78.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-            </ImageView>
-            <ImageView id="image_6.4" fitHeight="79.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../images/block.png" />
-               </image>
-            </ImageView>
-            <ImageView id="image_6.5" fitHeight="72.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_4.5" fitHeight="500.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/block.png" />
                </image>

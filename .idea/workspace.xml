@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/mettleGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/mettleGame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/NewEmptyJUnitTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-NewEmptyJUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/NewEmptyJUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/NewEmptyJUnitTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,14 +45,21 @@
       <file leaf-file-name="MettleGameController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="45">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
                 <element signature="e#901#946#0" expanded="true" />
                 <element signature="e#901#946#0" expanded="true" />
-                <element signature="e#1061#1142#1" expanded="true" />
-                <element signature="e#1080#1141#0" expanded="true" />
-                <element signature="e#1080#1141#0" expanded="true" />
+                <element signature="e#957#999#1" expanded="true" />
+                <element signature="e#972#998#0" expanded="true" />
+                <element signature="e#984#998#0" expanded="true" />
+                <element signature="e#1027#1037#0" expanded="true" />
+                <element signature="e#1049#1130#1" expanded="true" />
+                <element signature="e#1068#1129#0" expanded="true" />
+                <element signature="e#1068#1129#0" expanded="true" />
+                <element signature="e#1158#1205#1" expanded="true" />
+                <element signature="e#1182#1203#0" expanded="true" />
+                <element signature="e#1182#1203#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,6 +141,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaFXMettle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
               <item name="MettleGameController" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
@@ -201,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NewEmptyJUnitTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.neomtech.javafxmettle.App" />
       <module name="javaFXMettle" />
@@ -277,8 +289,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NewEmptyJUnitTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.NewEmptyJUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +306,7 @@
       <updated>1606891273647</updated>
       <workItem from="1606891278187" duration="819000" />
       <workItem from="1606988640125" duration="813000" />
-      <workItem from="1607021843556" duration="4003000" />
+      <workItem from="1607021843556" duration="4998000" />
     </task>
     <servers />
   </component>
@@ -305,9 +317,12 @@
     <history-entry file="NewEmptyJUnitTest - 2020.12.03 at 15h 46m 29s.xml">
       <configuration name="NewEmptyJUnitTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="NewEmptyJUnitTest - 2020.12.04 at 03h 33m 17s.xml">
+      <configuration name="NewEmptyJUnitTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5635000" />
+    <option name="totallyTimeSpent" value="6630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -315,6 +330,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="RestServices" order="3" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -322,8 +338,8 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4562147" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22457626" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4562147" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22457626" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20872483" />
@@ -335,7 +351,6 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -431,14 +446,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="45">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
             <element signature="e#901#946#0" expanded="true" />
             <element signature="e#901#946#0" expanded="true" />
-            <element signature="e#1061#1142#1" expanded="true" />
-            <element signature="e#1080#1141#0" expanded="true" />
-            <element signature="e#1080#1141#0" expanded="true" />
+            <element signature="e#957#999#1" expanded="true" />
+            <element signature="e#972#998#0" expanded="true" />
+            <element signature="e#984#998#0" expanded="true" />
+            <element signature="e#1027#1037#0" expanded="true" />
+            <element signature="e#1049#1130#1" expanded="true" />
+            <element signature="e#1068#1129#0" expanded="true" />
+            <element signature="e#1068#1129#0" expanded="true" />
+            <element signature="e#1158#1205#1" expanded="true" />
+            <element signature="e#1182#1203#0" expanded="true" />
+            <element signature="e#1182#1203#0" expanded="true" />
           </folding>
         </state>
       </provider>
