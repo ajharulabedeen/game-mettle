@@ -15,7 +15,6 @@ import java.util.List;
 public class Utils {
 
     public static List<String> imageName = Arrays.asList(new String[]{
-            "block.png",
             "circle_L_blue_angle.png",
             "circle_L_blue_hori.png",
             "circle_L_blue_star.png",

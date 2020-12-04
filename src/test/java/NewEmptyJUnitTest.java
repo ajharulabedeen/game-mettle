@@ -12,6 +12,8 @@ import org.junit.jupiter.api.Test;
 import xyz.neomtech.javafxmettle.Cards;
 import xyz.neomtech.javafxmettle.utils.*;
 
+import javax.xml.transform.sax.SAXSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -30,12 +32,17 @@ public class NewEmptyJUnitTest {
         Utils.printImageName();
     }
 
-//    public Enum size;
-//    public Enum shape;
-//    public Enum color;
-//    public Enum pattern;
-//    public String imageName;
-//    public boolean turnedOver;
+//    @Test
+    public void printAllNames() {
+//        Utils.printImageName();
+        Utils.imageName.forEach(iName -> {
+            String[] s = iName.split("_");
+            System.out.println(s.length);
+            System.out.println(s[0]);
+            System.out.println(s[1]);
+        });
+    }
+
     @Test
     public void testObjectEquals() {
 
@@ -59,8 +66,8 @@ public class NewEmptyJUnitTest {
 
         System.out.println(card1.equals(card2));
         System.out.println(card1.equals(card3));
-        assertEquals(card1,card2);
-        assertEquals(card1,card3);
+        assertEquals(card1, card2);
+        assertEquals(card1, card3);
 
     }
 }
