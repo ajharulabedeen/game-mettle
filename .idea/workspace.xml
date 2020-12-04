@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Size.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NewEmptyJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NewEmptyJUnitTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +17,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NewEmptyJUnitTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NewEmptyJUnitTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/NewEmptyJUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="256">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="e#1066#1092#1" expanded="true" />
+                <element signature="e#1098#1123#0" expanded="true" />
+                <element signature="e#1098#1123#0" expanded="true" />
+                <element signature="e#1133#1154#0" expanded="true" />
+                <element signature="e#1133#1154#0" expanded="true" />
+                <element signature="e#1164#1192#0" expanded="true" />
+                <element signature="e#1164#1192#0" expanded="true" />
+                <element signature="e#1202#1232#0" expanded="true" />
+                <element signature="e#1202#1232#0" expanded="true" />
+                <element signature="e#1308#1334#1" expanded="true" />
+                <element signature="e#1278#1305#0" expanded="true" />
+                <element signature="e#1278#1305#0" expanded="true" />
+                <element signature="e#1315#1336#0" expanded="true" />
+                <element signature="e#1315#1336#0" expanded="true" />
+                <element signature="e#1346#1374#0" expanded="true" />
+                <element signature="e#1346#1374#0" expanded="true" />
+                <element signature="e#1384#1414#0" expanded="true" />
+                <element signature="e#1384#1414#0" expanded="true" />
+                <element signature="e#1424#1450#1" expanded="true" />
+                <element signature="e#1460#1487#0" expanded="true" />
+                <element signature="e#1460#1487#0" expanded="true" />
+                <element signature="e#1497#1518#0" expanded="true" />
+                <element signature="e#1497#1518#0" expanded="true" />
+                <element signature="e#1528#1555#0" expanded="true" />
+                <element signature="e#1528#1555#0" expanded="true" />
+                <element signature="e#1565#1596#0" expanded="true" />
+                <element signature="e#1565#1596#0" expanded="true" />
+                <element signature="e#1626#1645#0" expanded="true" />
+                <element signature="e#1626#1645#0" expanded="true" />
+                <element signature="e#1675#1694#0" expanded="true" />
+                <element signature="e#1675#1694#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Size.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Size.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -36,14 +81,59 @@
           <provider selected="true" editor-type-id="model-editor-provider" />
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="376">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="e#410#3473#0" expanded="true" />
                 <element signature="e#410#3473#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cards.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Cards.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+              <folding>
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#807#808#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1039#1040#0" expanded="true" />
+                <element signature="e#1067#1068#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1173#1174#0" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#1285#1286#0" expanded="true" />
+                <element signature="e#1321#1322#0" expanded="true" />
+                <element signature="e#1353#1354#0" expanded="true" />
+                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#1445#1446#0" expanded="true" />
+                <element signature="e#1482#1483#0" expanded="true" />
+                <element signature="e#1515#1516#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1612#1613#0" expanded="true" />
+                <element signature="e#1775#1800#1" expanded="true" />
+                <element signature="e#1828#1837#0" expanded="true" />
+                <element signature="e#1868#1891#0" expanded="true" />
+                <element signature="e#1868#1891#0" expanded="true" />
+                <element signature="e#1911#1936#0" expanded="true" />
+                <element signature="e#1911#1936#0" expanded="true" />
+                <element signature="e#1955#1980#0" expanded="true" />
+                <element signature="e#1955#1980#0" expanded="true" />
+                <element signature="e#2000#2029#0" expanded="true" />
+                <element signature="e#2000#2029#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,11 +188,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/NewEmptyJUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Size.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Cards.java" />
+        <option value="$PROJECT_DIR$/src/test/java/NewEmptyJUnitTest.java" />
       </list>
     </option>
   </component>
@@ -177,7 +269,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="1a9f42e2:ClassTreeNode" />
+              <item name="Size" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
@@ -185,14 +277,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaFXMettle" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
@@ -206,6 +290,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaFXMettle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="NewEmptyJUnitTest" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
@@ -240,7 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.NewEmptyJUnitTest.testObjectEquals">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.neomtech.javafxmettle.App" />
       <module name="javaFXMettle" />
@@ -263,6 +355,23 @@
       <option name="MAIN_CLASS_NAME" value="NewEmptyJUnitTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="NewEmptyJUnitTest.testObjectEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaFXMettle" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NewEmptyJUnitTest" />
+      <option name="METHOD_NAME" value="testObjectEquals" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -313,9 +422,11 @@
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.NewEmptyJUnitTest" />
+      <item itemvalue="JUnit.NewEmptyJUnitTest.testObjectEquals" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NewEmptyJUnitTest.testObjectEquals" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.NewEmptyJUnitTest" />
       </list>
@@ -333,52 +444,74 @@
       <updated>1606891273647</updated>
       <workItem from="1606891278187" duration="819000" />
       <workItem from="1606988640125" duration="813000" />
-      <workItem from="1607021843556" duration="8098000" />
+      <workItem from="1607021843556" duration="11971000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewEmptyJUnitTest - 2020.12.03 at 15h 44m 53s.xml">
-      <configuration name="NewEmptyJUnitTest" configurationId="JUnit" />
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 14h 52m 28s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewEmptyJUnitTest - 2020.12.03 at 15h 46m 29s.xml">
-      <configuration name="NewEmptyJUnitTest" configurationId="JUnit" />
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 14h 52m 40s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewEmptyJUnitTest - 2020.12.04 at 03h 33m 17s.xml">
-      <configuration name="NewEmptyJUnitTest" configurationId="JUnit" />
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 14h 54m 37s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 14h 55m 49s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 14h 56m 01s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 14h 56m 33s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 14h 56m 56s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 14h 57m 39s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 15h 02m 53s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewEmptyJUnitTest_testObjectEquals - 2020.12.04 at 15h 03m 36s.xml">
+      <configuration name="NewEmptyJUnitTest.testObjectEquals" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9730000" />
+    <option name="totallyTimeSpent" value="13603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="RestServices" order="3" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43644068" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34887007" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
-      <window_info anchor="right" id="ReST Console" order="3" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.19067797" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3601695" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34887007" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18322147" />
+      <window_info anchor="right" id="ReST Console" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -448,13 +581,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NewEmptyJUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <element signature="e#1066#1092#1" expanded="true" />
+            <element signature="e#1098#1123#0" expanded="true" />
+            <element signature="e#1098#1123#0" expanded="true" />
+            <element signature="e#1133#1154#0" expanded="true" />
+            <element signature="e#1133#1154#0" expanded="true" />
+            <element signature="e#1164#1192#0" expanded="true" />
+            <element signature="e#1164#1192#0" expanded="true" />
+            <element signature="e#1202#1232#0" expanded="true" />
+            <element signature="e#1202#1232#0" expanded="true" />
+            <element signature="e#1308#1334#1" expanded="true" />
+            <element signature="e#1278#1305#0" expanded="true" />
+            <element signature="e#1278#1305#0" expanded="true" />
+            <element signature="e#1315#1336#0" expanded="true" />
+            <element signature="e#1315#1336#0" expanded="true" />
+            <element signature="e#1346#1374#0" expanded="true" />
+            <element signature="e#1346#1374#0" expanded="true" />
+            <element signature="e#1384#1414#0" expanded="true" />
+            <element signature="e#1384#1414#0" expanded="true" />
+            <element signature="e#1424#1450#1" expanded="true" />
+            <element signature="e#1460#1487#0" expanded="true" />
+            <element signature="e#1460#1487#0" expanded="true" />
+            <element signature="e#1497#1518#0" expanded="true" />
+            <element signature="e#1497#1518#0" expanded="true" />
+            <element signature="e#1528#1555#0" expanded="true" />
+            <element signature="e#1528#1555#0" expanded="true" />
+            <element signature="e#1565#1596#0" expanded="true" />
+            <element signature="e#1565#1596#0" expanded="true" />
+            <element signature="e#1626#1645#0" expanded="true" />
+            <element signature="e#1626#1645#0" expanded="true" />
+            <element signature="e#1675#1694#0" expanded="true" />
+            <element signature="e#1675#1694#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -520,11 +679,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="376">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
           <folding>
             <element signature="e#410#3473#0" expanded="true" />
             <element signature="e#410#3473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Size.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Cards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+          <folding>
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1775#1800#1" expanded="true" />
+            <element signature="e#1828#1837#0" expanded="true" />
+            <element signature="e#1868#1891#0" expanded="true" />
+            <element signature="e#1868#1891#0" expanded="true" />
+            <element signature="e#1911#1936#0" expanded="true" />
+            <element signature="e#1911#1936#0" expanded="true" />
+            <element signature="e#1955#1980#0" expanded="true" />
+            <element signature="e#1955#1980#0" expanded="true" />
+            <element signature="e#2000#2029#0" expanded="true" />
+            <element signature="e#2000#2029#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NewEmptyJUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#1066#1092#1" expanded="true" />
+            <element signature="e#1098#1123#0" expanded="true" />
+            <element signature="e#1098#1123#0" expanded="true" />
+            <element signature="e#1133#1154#0" expanded="true" />
+            <element signature="e#1133#1154#0" expanded="true" />
+            <element signature="e#1164#1192#0" expanded="true" />
+            <element signature="e#1164#1192#0" expanded="true" />
+            <element signature="e#1202#1232#0" expanded="true" />
+            <element signature="e#1202#1232#0" expanded="true" />
+            <element signature="e#1308#1334#1" expanded="true" />
+            <element signature="e#1278#1305#0" expanded="true" />
+            <element signature="e#1278#1305#0" expanded="true" />
+            <element signature="e#1315#1336#0" expanded="true" />
+            <element signature="e#1315#1336#0" expanded="true" />
+            <element signature="e#1346#1374#0" expanded="true" />
+            <element signature="e#1346#1374#0" expanded="true" />
+            <element signature="e#1384#1414#0" expanded="true" />
+            <element signature="e#1384#1414#0" expanded="true" />
+            <element signature="e#1424#1450#1" expanded="true" />
+            <element signature="e#1460#1487#0" expanded="true" />
+            <element signature="e#1460#1487#0" expanded="true" />
+            <element signature="e#1497#1518#0" expanded="true" />
+            <element signature="e#1497#1518#0" expanded="true" />
+            <element signature="e#1528#1555#0" expanded="true" />
+            <element signature="e#1528#1555#0" expanded="true" />
+            <element signature="e#1565#1596#0" expanded="true" />
+            <element signature="e#1565#1596#0" expanded="true" />
+            <element signature="e#1626#1645#0" expanded="true" />
+            <element signature="e#1626#1645#0" expanded="true" />
+            <element signature="e#1675#1694#0" expanded="true" />
+            <element signature="e#1675#1694#0" expanded="true" />
           </folding>
         </state>
       </provider>

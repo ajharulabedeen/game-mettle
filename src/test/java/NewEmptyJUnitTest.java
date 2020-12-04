@@ -9,12 +9,12 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import xyz.neomtech.javafxmettle.utils.Utils;
+import xyz.neomtech.javafxmettle.Cards;
+import xyz.neomtech.javafxmettle.utils.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
  * @author Dell
  */
 public class NewEmptyJUnitTest {
@@ -23,10 +23,44 @@ public class NewEmptyJUnitTest {
     }
 //     TODO: add test methods here.
 //     The methods must be annotated with annotation @Test. For example:
-//    
-     @Test
-     public void hello() {
+
+    @Test
+    public void hello() {
         System.out.println("Hellow World!");
-         Utils.printImageName();
-     }
+        Utils.printImageName();
+    }
+
+//    public Enum size;
+//    public Enum shape;
+//    public Enum color;
+//    public Enum pattern;
+//    public String imageName;
+//    public boolean turnedOver;
+    @Test
+    public void testObjectEquals() {
+
+        Cards card1 = new Cards();
+        card1.setColor(Color.red);
+        card1.setSize(Size.L);
+        card1.setShape(Shape.circle);
+        card1.setPattern(Pattern.hori);
+
+        Cards card2 = new Cards();
+        card2.setColor(Color.green);
+        card2.setSize(Size.L);
+        card2.setShape(Shape.circle);
+        card2.setPattern(Pattern.hori);
+
+        Cards card3 = new Cards();
+        card3.setColor(Color.green);
+        card3.setSize(Size.m);
+        card3.setShape(Shape.heart);
+        card3.setPattern(Pattern.angle);
+
+        System.out.println(card1.equals(card2));
+        System.out.println(card1.equals(card3));
+        assertEquals(card1,card2);
+        assertEquals(card1,card3);
+
+    }
 }
