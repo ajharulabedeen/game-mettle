@@ -10,7 +10,7 @@ package xyz.neomtech.javafxmettle.utils;
  * @author Dell
  */
 public enum Color {
-    GREEN,
-    RED,
-    BLUE
+    green,
+    red,
+    blue
 }

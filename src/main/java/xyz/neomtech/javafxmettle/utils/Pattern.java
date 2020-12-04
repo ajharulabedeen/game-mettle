@@ -10,7 +10,7 @@ package xyz.neomtech.javafxmettle.utils;
  * @author Dell
  */
 public enum Pattern {
-    HORIZONTAL_STRIPE,
-    ANGLE_STRIPE,
-    STAR
+    hori,
+    angle,
+    star
 }

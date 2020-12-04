@@ -10,7 +10,7 @@ package xyz.neomtech.javafxmettle.utils;
  * @author Dell
  */
 public enum Shape {
-    CIRCLE,
-    STAR,
-    HEART
+    L,
+    s,
+    m
 }
