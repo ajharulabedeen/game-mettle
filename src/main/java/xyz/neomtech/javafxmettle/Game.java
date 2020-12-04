@@ -11,9 +11,7 @@ import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import xyz.neomtech.javafxmettle.utils.Shape;
-import xyz.neomtech.javafxmettle.utils.Size;
-import xyz.neomtech.javafxmettle.utils.Utils;
+import xyz.neomtech.javafxmettle.utils.*;
 import javafx.fxml.Initializable;
 
 import javax.rmi.CORBA.Util;
@@ -69,16 +67,34 @@ public class Game implements Initializable {
 
     public void makingCards() {
         Utils.imageName.forEach(iName -> {
+//            circle_L_blue_angle.png //ref values.
             String[] s = iName.split("_");
-            System.out.println(s.length);
-//            System.out.println(s[0]);
-//            System.out.println(s[1]);
             Cards card = new Cards();
             card.setShape(setShape(s[0]));
             card.setSize(setSize(s[1]));
+            card.setColor(setColor(s[2]));
+            card.setPattern(setPattern(s[3]));
+            card.setImageName(iName);
             cardsList.add(card);
         });
         cardsList.forEach(s -> System.out.println(s.toString()));
+    }
+
+    private Enum setPattern(String newString) {
+        String s = newString.replace(".png", "");
+        Enum pattern = null;
+        if (s.equals(Pattern.angle.toString())) pattern = Pattern.angle;
+        else if (s.equals(Pattern.hori.toString())) pattern = Pattern.hori;
+        else if (s.equals(Pattern.star.toString())) pattern = Pattern.star;
+        return pattern;
+    }
+
+    private Enum setColor(String s) {
+        Enum color = null;
+        if (s.equals(Color.blue.toString())) color = Color.blue;
+        else if (s.equals(Color.red.toString())) color = Color.red;
+        else if (s.equals(Color.green.toString())) color = Color.green;
+        return color;
     }
 
     private Enum setSize(String s) {
@@ -96,6 +112,4 @@ public class Game implements Initializable {
         else if (s.equals("star")) shape = Shape.star;
         return shape;
     }
-
-
 }
