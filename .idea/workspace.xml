@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirments.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/PrimaryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/SecondaryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/PrimaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/SecondaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/mettleGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/mettleGame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,12 +26,9 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="1343">
               <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
               <folding>
-                <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-                <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-                <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" />
                 <element signature="n#dependencies#0;n#project#0;n#!!top" />
               </folding>
             </state>
@@ -50,12 +36,25 @@
           <provider selected="true" editor-type-id="model-editor-provider" />
         </entry>
       </file>
-      <file leaf-file-name="mettleGame.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+              <folding>
+                <element signature="e#410#3473#0" expanded="true" />
+                <element signature="e#410#3473#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mettleGame.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="182" column="31" lean-forward="true" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
+            <state relative-caret-position="376">
+              <caret line="187" column="31" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="31" />
               <folding>
                 <element signature="n#ImageView#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
                 <element signature="n#ImageView#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
@@ -100,9 +99,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/NewEmptyJUnitTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java" />
       </list>
     </option>
   </component>
@@ -167,7 +167,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="1a9f42e2:ClassTreeNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaFXMettle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
@@ -323,7 +333,7 @@
       <updated>1606891273647</updated>
       <workItem from="1606891278187" duration="819000" />
       <workItem from="1606988640125" duration="813000" />
-      <workItem from="1607021843556" duration="6838000" />
+      <workItem from="1607021843556" duration="8098000" />
     </task>
     <servers />
   </component>
@@ -339,7 +349,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8470000" />
+    <option name="totallyTimeSpent" value="9730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -356,11 +366,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.029661017" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22457626" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43644068" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34887007" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14026846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
       <window_info anchor="right" id="ReST Console" order="3" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -467,25 +477,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-          <folding>
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-            <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-            <element signature="n#dependencies#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="model-editor-provider" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="182" column="31" lean-forward="true" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
+        <state relative-caret-position="376">
+          <caret line="187" column="31" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="31" />
           <folding>
             <element signature="n#ImageView#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
             <element signature="n#ImageView#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
@@ -507,6 +503,28 @@
             <element signature="n#ImageView#2;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
             <element signature="n#ImageView#3;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
             <element signature="n#ImageView#4;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="model-editor-provider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#410#3473#0" expanded="true" />
+            <element signature="e#410#3473#0" expanded="true" />
           </folding>
         </state>
       </provider>
