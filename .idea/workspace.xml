@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="" />
+    <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirments.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/PrimaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/SecondaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/PrimaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/SecondaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/mettleGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/mettleGame.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,8 +54,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-648">
-              <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            <state relative-caret-position="355">
+              <caret line="182" column="31" lean-forward="true" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
               <folding>
                 <element signature="n#ImageView#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
                 <element signature="n#ImageView#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
@@ -64,27 +77,6 @@
                 <element signature="n#ImageView#2;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
                 <element signature="n#ImageView#3;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
                 <element signature="n#ImageView#4;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MettleGameController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/MettleGameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding>
-                <element signature="e#957#999#1" expanded="true" />
-                <element signature="e#972#998#0" expanded="true" />
-                <element signature="e#984#998#0" expanded="true" />
-                <element signature="e#1027#1037#0" expanded="true" />
-                <element signature="e#1049#1130#1" expanded="true" />
-                <element signature="e#1090#1151#0" expanded="true" />
-                <element signature="e#1090#1151#0" expanded="true" />
-                <element signature="e#1158#1205#1" expanded="true" />
-                <element signature="e#1204#1225#0" expanded="true" />
-                <element signature="e#1204#1225#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,15 +168,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaFXMettle" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
-              <item name="MettleGameController" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
@@ -340,7 +323,7 @@
       <updated>1606891273647</updated>
       <workItem from="1606891278187" duration="819000" />
       <workItem from="1606988640125" duration="813000" />
-      <workItem from="1607021843556" duration="6100000" />
+      <workItem from="1607021843556" duration="6838000" />
     </task>
     <servers />
   </component>
@@ -356,7 +339,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7732000" />
+    <option name="totallyTimeSpent" value="8470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -501,8 +484,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="355">
+          <caret line="182" column="31" lean-forward="true" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
           <folding>
             <element signature="n#ImageView#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />
             <element signature="n#ImageView#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#AnchorPane#0;n#!!top" />

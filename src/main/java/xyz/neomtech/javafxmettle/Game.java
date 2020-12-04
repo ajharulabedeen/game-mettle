@@ -9,7 +9,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import xyz.neomtech.javafxmettle.utils.Utils;
 
-public class MettleGameController {
+public class Game {
 
     Random rand = new Random();
 

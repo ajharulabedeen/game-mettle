@@ -29,7 +29,7 @@ PLAYER
 
 GAME
 	Attributes
-		1-Players--listofPlayers
+		1- 	Players--listofPlayers
 		2-Cards--listofCards
 		3-currentPlayer--player
 		4- Is Game Over--boolean
@@ -48,7 +48,7 @@ Steps
 	- create list of cards attribute
 	- create currentPlayer attribute
 	- create isGameOver attribute
-	- create Double array of Cards named currentCards
+			- create Double array of Cards named currentCards
 	- create List of cards named turnedOverCards
 	- create List of cards named remainingCards
 6. create turnOver methods in Cards class

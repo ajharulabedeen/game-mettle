@@ -10,181 +10,181 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="924.0" prefWidth="1501.0" style="-fx-background-color: biscut;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.neomtech.javafxmettle.MettleGameController">
-    <children>
-        <VBox layoutX="14.0" layoutY="14.0" prefHeight="213.0" prefWidth="100.0">
-            <children>
-                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P1" />
-                <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P1 Score :" />
-                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P2" />
-                <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P2 Score :" />
-                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P3" />
-                <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P3 Score :" />
-                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P4" />
-                <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P4 Score :" />
-            </children>
-        </VBox>
-        <Button layoutX="14.0" layoutY="256.0" mnemonicParsing="false" onAction="#submitButtonAction" prefHeight="26.0" prefWidth="98.0" text="Submit" />
-        <Label layoutX="14.0" layoutY="301.0" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Card Remains" />
-        <ScrollPane layoutX="150.0" layoutY="10.0" prefHeight="914.0" prefWidth="1338.0">
-            <content>
-                <VBox prefHeight="200.0" prefWidth="100.0">
-                    <children>
-                        <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
-                            <children>
-                                <ImageView id="image_1_1" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets left="5.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                                <ImageView id="image_1_2" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_1_3" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_1_4" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_1_5" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets right="10.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                            </children>
-                            <padding>
-                                <Insets bottom="10.0" left="10.0" top="10.0" />
-                            </padding>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
-                            <children>
-                                <ImageView id="image_2.1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets left="5.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                                <ImageView id="image_2.2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_2.3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_2.4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_2.5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets right="10.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                            </children>
-                            <padding>
-                                <Insets bottom="10.0" left="10.0" top="10.0" />
-                            </padding>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
-                            <children>
-                                <ImageView id="image_3.1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets left="5.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                                <ImageView id="image_3.2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_3.3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_3.4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction"  pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_3.5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets right="10.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                            </children>
-                            <padding>
-                                <Insets bottom="10.0" left="10.0" top="10.0" />
-                            </padding>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
-                            <children>
-                                <ImageView id="image_4.1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets left="5.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                                <ImageView id="image_4.2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_4.3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_4.4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                </ImageView>
-                                <ImageView id="image_4.5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../images/block.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets right="10.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                            </children>
-                            <padding>
-                                <Insets bottom="10.0" left="10.0" top="10.0" />
-                            </padding>
-                        </HBox>
-                    </children>
-                </VBox>
-            </content>
-        </ScrollPane>
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="924.0" prefWidth="1501.0" style="-fx-background-color: biscut;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.neomtech.javafxmettle.Game">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="213.0" prefWidth="100.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P1" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P1 Score :" />
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P2" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P2 Score :" />
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P3" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P3 Score :" />
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P4" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P4 Score :" />
+         </children>
+      </VBox>
+      <Button layoutX="14.0" layoutY="256.0" mnemonicParsing="false" onAction="#submitButtonAction" prefHeight="26.0" prefWidth="98.0" text="Submit" />
+      <Label layoutX="14.0" layoutY="301.0" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Card Remains" />
+      <ScrollPane layoutX="150.0" layoutY="10.0" prefHeight="914.0" prefWidth="1338.0">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
+                     <children>
+                        <ImageView id="image_1_1" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView id="image_1_2" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_1_3" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_1_4" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_1_5" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
+                     <children>
+                        <ImageView id="image_2.1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView id="image_2.2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_2.3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_2.4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_2.5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
+                     <children>
+                        <ImageView id="image_3.1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView id="image_3.2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_3.3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_3.4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_3.5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
+                     <children>
+                        <ImageView id="image_4.1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView id="image_4.2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_4.3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_4.4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="image_4.5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/block.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
 </AnchorPane>
