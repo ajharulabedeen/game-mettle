@@ -1,0 +1,55 @@
+Nouns-Classes, or parts of classes
+Player
+Turn
+Cards
+Score
+Similarity
+Game
+
+Classes
+	Game
+	Players
+	Cards
+
+CARDS
+	Attributes
+		1-Size--Enum
+		2-Shape--Enum
+		3-Color--enum
+		4-Pattern--Enum
+		5-Turned over--boolean
+
+Methods-Turnover
+
+PLAYER
+	Attributes
+		1-Turn--boolean
+		2-Score--integer
+		Methods-Taketurn
+
+GAME
+	Attributes
+		1-Players--listofPlayers
+		2-Cards--listofCards
+		3-currentPlayer--player
+		4- Is Game Over--boolean
+		5. currentCards-- Card[][]
+		6. turnedOverCards-- List<Card>
+		7. remainingCards-- List<Card>
+Methods-endGame
+
+Steps
+1. Create enum for size, shape, color, and pattern
+2. Create Card class with attributes size, shape, color, pattern, and isTurnedOver
+3. Create Player class with attributes isTurn, and score
+4. Create game class
+5. In game class
+	- create list of players attribute
+	- create list of cards attribute
+	- create currentPlayer attribute
+	- create isGameOver attribute
+	- create Double array of Cards named currentCards
+	- create List of cards named turnedOverCards
+	- create List of cards named remainingCards
+6. create turnOver methods in Cards class
+7. create takeTurn method in Player class
