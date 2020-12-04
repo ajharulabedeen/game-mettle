@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -14,14 +15,18 @@
    <children>
       <VBox layoutX="14.0" layoutY="14.0" prefHeight="213.0" prefWidth="100.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P1" />
-            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P1 Score :" />
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P2" />
-            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P2 Score :" />
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P3" />
-            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P3 Score :" />
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Active : P4" />
-            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="P4 Score :" />
+            <CheckBox mnemonicParsing="false" text="Player 1" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <CheckBox mnemonicParsing="false" text="Player 2" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <CheckBox mnemonicParsing="false" text="Player 3" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <CheckBox mnemonicParsing="false" text="Player 4" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
          </children>
       </VBox>
       <Button layoutX="14.0" layoutY="256.0" mnemonicParsing="false" onAction="#submitButtonAction" prefHeight="26.0" prefWidth="98.0" text="Submit" />
