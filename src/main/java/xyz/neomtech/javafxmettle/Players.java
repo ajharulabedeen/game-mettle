@@ -4,6 +4,30 @@ public class Players {
     boolean turn;
     int score;
     int termPlayed;
+    String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Players() {
+
+    }
+
+    public Players(String name) {
+        this.name = name;
+    }
+
+    public Players(boolean turn, int score, int termPlayed, String name) {
+        this.turn = turn;
+        this.score = score;
+        this.termPlayed = termPlayed;
+        this.name = name;
+    }
 
     public boolean isTurn() {
         return turn;

@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -31,6 +32,8 @@ public class Game implements Initializable {
     private CheckBox p3;
     @FXML
     private CheckBox p4;
+    @FXML
+    private Label currentPlayerLabel;
 
 
 //    @FXML
@@ -50,6 +53,12 @@ public class Game implements Initializable {
     List<Cards> currentCards = new ArrayList<>();
     List<Cards> usedCards = new ArrayList<>();
     List<Cards> selectedCards = new ArrayList<>();
+
+    Players playersCurrent = new Players();
+    Players player1 = new Players("P1");
+    Players player2 = new Players("P2");
+    Players player3 = new Players("P3");
+    Players player4 = new Players("P4");
 
     @FXML
     private void submitButtonAction() {
@@ -85,6 +94,8 @@ public class Game implements Initializable {
             p3.setSelected(false);
             p4.setSelected(false);
         }
+//        playersCurrent = player1;
+//        currentPlayerLabel.setText("Current Player : \n" + player1.getName());
     }
 
     @FXML
@@ -94,6 +105,8 @@ public class Game implements Initializable {
             p3.setSelected(false);
             p4.setSelected(false);
         }
+//        playersCurrent = player2;
+//        currentPlayerLabel.setText("Current Player : \n" + player2.getName());
     }
 
     @FXML
@@ -103,6 +116,8 @@ public class Game implements Initializable {
             p2.setSelected(false);
             p4.setSelected(false);
         }
+//        playersCurrent = player3;
+//        currentPlayerLabel.setText("Current Player : \n" + player3.getName());
     }
 
     @FXML
@@ -112,6 +127,8 @@ public class Game implements Initializable {
             p2.setSelected(false);
             p3.setSelected(false);
         }
+//        playersCurrent = player4;
+//        currentPlayerLabel.setText("Current Player : \n" + player4.getName());
     }
 
     @Override
