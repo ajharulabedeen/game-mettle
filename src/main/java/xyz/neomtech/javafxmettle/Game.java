@@ -57,6 +57,29 @@ public class Game implements Initializable {
     @FXML
     private ImageView image_2_5;
 
+    @FXML
+    private ImageView image_3_1;
+    @FXML
+    private ImageView image_3_2;
+    @FXML
+    private ImageView image_3_3;
+    @FXML
+    private ImageView image_3_4;
+    @FXML
+    private ImageView image_3_5;
+
+    @FXML
+    private ImageView image_4_1;
+    @FXML
+    private ImageView image_4_2;
+    @FXML
+    private ImageView image_4_3;
+    @FXML
+    private ImageView image_4_4;
+    @FXML
+    private ImageView image_4_5;
+
+
 
     List<Cards> cardsList = new ArrayList<>();
     List<Cards> currentCards = new ArrayList<>();
