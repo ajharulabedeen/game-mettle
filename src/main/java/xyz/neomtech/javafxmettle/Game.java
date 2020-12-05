@@ -171,11 +171,17 @@ public class Game implements Initializable {
     }
 
     public void initCurrentCardList() {
-        for (int x = 0; x < 25; x++) {
+        for (int x = 0; x < 20; x++) {
             int y = rand.nextInt(cardsList.size() - 1);
             currentCards.add(cardsList.get(y));
         }
         currentCards.forEach(s -> System.out.println(s));
+        System.out.println(currentCards.size());
+
+//        for (int x = 0; x < 20; x++) {
+//            int y = rand.nextInt(cardsList.size() - 1);
+//            currentCards.add(cardsList.get(y));
+//        }
     }
 
     public void makingCards() {
@@ -226,131 +232,195 @@ public class Game implements Initializable {
         return shape;
     }
 
+    //1
     @FXML
     private void image_1_1Action(MouseEvent me) throws Exception {
+        int imageNumber = 0;
+        setImage(me, imageNumber);
+    }
+
+    private void setImage(MouseEvent me, int imageNumber) {
+        System.out.println("SET-IMAGE");
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
-        Cards cards = currentCards.get(0);
+        Cards cards = currentCards.get(imageNumber);
         if (!cards.turnedOver) {
-            Image image = new Image("images/" + currentCards.get(0).getImageName());
+            Image image = new Image("images/" + currentCards.get(imageNumber).getImageName());
             iv.setImage(image);
-            currentCards.get(0).setTurnedOver(true);
+            currentCards.get(imageNumber).setTurnedOver(true);
+            System.out.println(">" + currentCards.get(imageNumber).toString());
         }
     }
 
+    //2
     @FXML
     private void image_1_2Action(MouseEvent me) throws Exception {
+        int imageNumber = 1;
+        setImage(me, imageNumber);
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
     }
 
+    //3
     @FXML
     private void image_1_3Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 2;
+        setImage(me, imageNumber);
     }
 
+    //4
     @FXML
     private void image_1_4Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 3;
+        setImage(me, imageNumber);
     }
 
+    //5
     @FXML
     private void image_1_5Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 4;
+        setImage(me, imageNumber);
     }
 
+    //6
     @FXML
     private void image_2_1Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 5;
+        setImage(me, imageNumber);
     }
 
+    //7
     @FXML
     private void image_2_2Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 6;
+        setImage(me, imageNumber);
     }
 
+    //8
     @FXML
     private void image_2_3Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 7;
+        setImage(me, imageNumber);
     }
 
+    //9
     @FXML
     private void image_2_4Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 8;
+        setImage(me, imageNumber);
     }
 
+    //10
     @FXML
     private void image_2_5Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 9;
+        setImage(me, imageNumber);
     }
 
+    //11
     @FXML
     private void image_3_1Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 10;
+        setImage(me, imageNumber);
     }
 
+    //12
     @FXML
     private void image_3_2Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 11;
+        setImage(me, imageNumber);
     }
 
+    //13
     @FXML
     private void image_3_3Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 12;
+        setImage(me, imageNumber);
     }
 
+    //14
     @FXML
     private void image_3_4Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 13;
+        setImage(me, imageNumber);
     }
 
+    //15
     @FXML
     private void image_3_5Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 14;
+        setImage(me, imageNumber);
     }
 
+    //16
     @FXML
     private void image_4_1Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 15;
+        setImage(me, imageNumber);
     }
 
+    //17
     @FXML
     private void image_4_2Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 16;
+        setImage(me, imageNumber);
     }
 
+    //18
     @FXML
     private void image_4_3Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 17;
+        setImage(me, imageNumber);
     }
 
+    //19
     @FXML
     private void image_4_4Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 18;
+        setImage(me, imageNumber);
     }
 
+    //20
     @FXML
     private void image_4_5Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        int imageNumber = 19;
+        setImage(me, imageNumber);
     }
-
 
 }
