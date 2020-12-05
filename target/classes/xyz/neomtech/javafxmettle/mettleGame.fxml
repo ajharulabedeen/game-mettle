@@ -37,7 +37,7 @@
                     <children>
                         <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
                             <children>
-                                <ImageView id="image_1_1" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_1_1" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
@@ -45,22 +45,22 @@
                                         <Insets left="5.0" />
                                     </HBox.margin>
                                 </ImageView>
-                                <ImageView id="image_1_2" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_1_2" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView id="image_1_3" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_1_3" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView id="image_1_4" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_1_4" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView id="image_1_5" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_1_5" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
@@ -75,7 +75,7 @@
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: pink;">
                             <children>
-                                <ImageView id="image_2.1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_2_1" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
@@ -83,22 +83,22 @@
                                         <Insets left="5.0" />
                                     </HBox.margin>
                                 </ImageView>
-                                <ImageView id="image_2.2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_2_2" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView id="image_2.3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_2_3" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView id="image_2.4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_2_4" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView id="image_2.5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="image_2_5" fitHeight="500.0" fitWidth="250.0" onMouseClicked="#image_11ClickAction" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../../../images/block.png" />
                                     </image>
