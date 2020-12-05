@@ -8,6 +8,7 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -21,6 +22,17 @@ public class Game implements Initializable {
     Random rand = new Random();
 
     //    row one.
+
+    @FXML
+    private CheckBox p1;
+    @FXML
+    private CheckBox p2;
+    @FXML
+    private CheckBox p3;
+    @FXML
+    private CheckBox p4;
+
+
 //    @FXML
 //    private ImageView image_1_1;
 //    @FXML
@@ -33,6 +45,12 @@ public class Game implements Initializable {
 //    private ImageView image_1_5;
     //    @FXML
 //    private ImageView e2b_imageView_to_show_mneaing;
+
+    List<Cards> cardsList = new ArrayList<>();
+    List<Cards> currentCards = new ArrayList<>();
+    List<Cards> usedCards = new ArrayList<>();
+    List<Cards> selectedCards = new ArrayList<>();
+
     @FXML
     private void submitButtonAction() {
         System.out.println("Button action working!");
@@ -51,9 +69,48 @@ public class Game implements Initializable {
             Image image = new Image("images/" + imageName);
 //            image_1_1.setImage(image);
             iv.setImage(image);
+            System.out.println(iv.getImage());
+            System.out.println(iv.getId());
+
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("imageNameError : " + imageName);
+        }
+    }
+
+    @FXML
+    private void checkBoxP1Event() {
+        if (p1.isSelected()) {
+            p2.setSelected(false);
+            p3.setSelected(false);
+            p4.setSelected(false);
+        }
+    }
+
+    @FXML
+    private void checkBoxP2Event() {
+        if (p2.isSelected()) {
+            p1.setSelected(false);
+            p3.setSelected(false);
+            p4.setSelected(false);
+        }
+    }
+
+    @FXML
+    private void checkBoxP3Event() {
+        if (p3.isSelected()) {
+            p1.setSelected(false);
+            p2.setSelected(false);
+            p4.setSelected(false);
+        }
+    }
+
+    @FXML
+    private void checkBoxP4Event() {
+        if (p4.isSelected()) {
+            p1.setSelected(false);
+            p2.setSelected(false);
+            p3.setSelected(false);
         }
     }
 
@@ -62,8 +119,6 @@ public class Game implements Initializable {
 //        Utils.printImageName();
         makingCards();
     }
-
-    List<Cards> cardsList = new ArrayList<>();
 
     public void makingCards() {
         Utils.imageName.forEach(iName -> {
