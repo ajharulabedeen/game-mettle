@@ -94,8 +94,8 @@ public class Game implements Initializable {
             p3.setSelected(false);
             p4.setSelected(false);
         }
-//        playersCurrent = player1;
-//        currentPlayerLabel.setText("Current Player : \n" + player1.getName());
+        playersCurrent = player1;
+        currentPlayerLabel.setText("Current Player : \n" + player1.getName());
     }
 
     @FXML
@@ -105,8 +105,8 @@ public class Game implements Initializable {
             p3.setSelected(false);
             p4.setSelected(false);
         }
-//        playersCurrent = player2;
-//        currentPlayerLabel.setText("Current Player : \n" + player2.getName());
+        playersCurrent = player2;
+        currentPlayerLabel.setText("Current Player : \n" + player2.getName());
     }
 
     @FXML
@@ -116,8 +116,8 @@ public class Game implements Initializable {
             p2.setSelected(false);
             p4.setSelected(false);
         }
-//        playersCurrent = player3;
-//        currentPlayerLabel.setText("Current Player : \n" + player3.getName());
+        playersCurrent = player3;
+        currentPlayerLabel.setText("Current Player : \n" + player3.getName());
     }
 
     @FXML
@@ -127,8 +127,8 @@ public class Game implements Initializable {
             p2.setSelected(false);
             p3.setSelected(false);
         }
-//        playersCurrent = player4;
-//        currentPlayerLabel.setText("Current Player : \n" + player4.getName());
+        playersCurrent = player4;
+        currentPlayerLabel.setText("Current Player : \n" + player4.getName());
     }
 
     @Override
