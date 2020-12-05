@@ -167,6 +167,7 @@ public class Game implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 //        Utils.printImageName();
         makingCards();
+        initCurrentCardList();
     }
 
     public void initCurrentCardList() {
@@ -174,6 +175,7 @@ public class Game implements Initializable {
             int y = rand.nextInt(cardsList.size() - 1);
             currentCards.add(cardsList.get(y));
         }
+        currentCards.forEach(s -> System.out.println(s));
     }
 
     public void makingCards() {
@@ -228,6 +230,12 @@ public class Game implements Initializable {
     private void image_1_1Action(MouseEvent me) throws Exception {
         ImageView iv = (ImageView) me.getSource();
         System.out.println(iv.getId());
+        Cards cards = currentCards.get(0);
+        if (!cards.turnedOver) {
+            Image image = new Image("images/" + currentCards.get(0).getImageName());
+            iv.setImage(image);
+            currentCards.get(0).setTurnedOver(true);
+        }
     }
 
     @FXML

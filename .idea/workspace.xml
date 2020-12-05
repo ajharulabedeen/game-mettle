@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/mettleGame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/mettleGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/neomtech/javafxmettle/mettleGame.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,8 +61,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="288" selection-start-line="288" selection-end-line="288" />
+            <state relative-caret-position="225">
+              <caret line="237" column="9" lean-forward="true" selection-start-line="237" selection-start-column="9" selection-end-line="237" selection-end-column="9" />
               <folding>
                 <element signature="e#1700#1717#0" expanded="true" />
                 <element signature="e#1730#1747#0" expanded="true" />
@@ -136,23 +133,23 @@
                 <element signature="e#4206#4247#0" expanded="true" />
                 <element signature="e#3608#3625#0" expanded="true" />
                 <element signature="e#4206#4247#0" expanded="true" />
-                <element signature="e#4440#4584#0" expanded="true" />
+                <element signature="e#4471#4615#0" expanded="true" />
                 <element signature="e#4445#4452#1" expanded="true" />
-                <element signature="e#4440#4584#0" expanded="true" />
-                <element signature="e#4440#4584#0" expanded="true" />
-                <element signature="e#4440#4584#0" expanded="true" />
-                <element signature="e#4440#4584#0" expanded="true" />
+                <element signature="e#4471#4615#0" expanded="true" />
+                <element signature="e#4471#4615#0" expanded="true" />
+                <element signature="e#4471#4615#0" expanded="true" />
+                <element signature="e#4471#4615#0" expanded="true" />
                 <element signature="e#4483#4495#1" expanded="true" />
-                <element signature="e#4539#4573#0" expanded="true" />
-                <element signature="e#4556#4572#0" expanded="true" />
-                <element signature="e#4556#4572#0" expanded="true" />
-                <element signature="e#4539#4573#0" expanded="true" />
+                <element signature="e#4570#4604#0" expanded="true" />
+                <element signature="e#4587#4603#0" expanded="true" />
+                <element signature="e#4587#4603#0" expanded="true" />
+                <element signature="e#4570#4604#0" expanded="true" />
                 <element signature="e#1952#1982#1" expanded="true" />
                 <element signature="e#1995#2020#1" expanded="true" />
-                <element signature="e#4986#5010#0" expanded="true" />
-                <element signature="e#4986#5010#0" expanded="true" />
-                <element signature="e#5024#5043#0" expanded="true" />
-                <element signature="e#5024#5043#0" expanded="true" />
+                <element signature="e#5075#5099#0" expanded="true" />
+                <element signature="e#5075#5099#0" expanded="true" />
+                <element signature="e#5113#5132#0" expanded="true" />
+                <element signature="e#5113#5132#0" expanded="true" />
                 <element signature="method#setPattern#0;class#Game#0" />
                 <element signature="e#2407#2448#1" expanded="true" />
                 <element signature="e#2457#2477#1" expanded="true" />
@@ -166,6 +163,17 @@
                 <element signature="e#6389#6415#0" expanded="true" />
                 <element signature="e#6401#6415#0" expanded="true" />
                 <element signature="e#6444#6454#0" expanded="true" />
+                <element signature="e#6564#6598#1" expanded="true" />
+                <element signature="e#6607#6811#0" expanded="true" />
+                <element signature="e#6607#6811#0" expanded="true" />
+                <element signature="e#6617#6675#1" expanded="true" />
+                <element signature="e#6668#6714#0" expanded="true" />
+                <element signature="e#6648#6682#0" expanded="true" />
+                <element signature="e#6668#6714#0" expanded="true" />
+                <element signature="e#6729#6747#0" expanded="true" />
+                <element signature="e#6729#6747#0" expanded="true" />
+                <element signature="e#6761#6800#0" expanded="true" />
+                <element signature="e#6761#6800#0" expanded="true" />
                 <element signature="e#6533#6575#1" expanded="true" />
                 <element signature="e#6548#6574#0" expanded="true" />
                 <element signature="e#6560#6574#0" expanded="true" />
@@ -688,7 +696,7 @@
       <updated>1606891273647</updated>
       <workItem from="1606891278187" duration="819000" />
       <workItem from="1606988640125" duration="813000" />
-      <workItem from="1607021843556" duration="30438000" />
+      <workItem from="1607021843556" duration="31198000" />
     </task>
     <servers />
   </component>
@@ -725,7 +733,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32070000" />
+    <option name="totallyTimeSpent" value="32830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -759,9 +767,9 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32909605" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3516949" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25282487" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1375839" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40677965" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25282487" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1375839" />
       <window_info anchor="right" id="ReST Console" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -1109,8 +1117,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="288" selection-start-line="288" selection-end-line="288" />
+        <state relative-caret-position="225">
+          <caret line="237" column="9" lean-forward="true" selection-start-line="237" selection-start-column="9" selection-end-line="237" selection-end-column="9" />
           <folding>
             <element signature="e#1700#1717#0" expanded="true" />
             <element signature="e#1730#1747#0" expanded="true" />
@@ -1181,23 +1189,23 @@
             <element signature="e#4206#4247#0" expanded="true" />
             <element signature="e#3608#3625#0" expanded="true" />
             <element signature="e#4206#4247#0" expanded="true" />
-            <element signature="e#4440#4584#0" expanded="true" />
+            <element signature="e#4471#4615#0" expanded="true" />
             <element signature="e#4445#4452#1" expanded="true" />
-            <element signature="e#4440#4584#0" expanded="true" />
-            <element signature="e#4440#4584#0" expanded="true" />
-            <element signature="e#4440#4584#0" expanded="true" />
-            <element signature="e#4440#4584#0" expanded="true" />
+            <element signature="e#4471#4615#0" expanded="true" />
+            <element signature="e#4471#4615#0" expanded="true" />
+            <element signature="e#4471#4615#0" expanded="true" />
+            <element signature="e#4471#4615#0" expanded="true" />
             <element signature="e#4483#4495#1" expanded="true" />
-            <element signature="e#4539#4573#0" expanded="true" />
-            <element signature="e#4556#4572#0" expanded="true" />
-            <element signature="e#4556#4572#0" expanded="true" />
-            <element signature="e#4539#4573#0" expanded="true" />
+            <element signature="e#4570#4604#0" expanded="true" />
+            <element signature="e#4587#4603#0" expanded="true" />
+            <element signature="e#4587#4603#0" expanded="true" />
+            <element signature="e#4570#4604#0" expanded="true" />
             <element signature="e#1952#1982#1" expanded="true" />
             <element signature="e#1995#2020#1" expanded="true" />
-            <element signature="e#4986#5010#0" expanded="true" />
-            <element signature="e#4986#5010#0" expanded="true" />
-            <element signature="e#5024#5043#0" expanded="true" />
-            <element signature="e#5024#5043#0" expanded="true" />
+            <element signature="e#5075#5099#0" expanded="true" />
+            <element signature="e#5075#5099#0" expanded="true" />
+            <element signature="e#5113#5132#0" expanded="true" />
+            <element signature="e#5113#5132#0" expanded="true" />
             <element signature="method#setPattern#0;class#Game#0" />
             <element signature="e#2407#2448#1" expanded="true" />
             <element signature="e#2457#2477#1" expanded="true" />
@@ -1211,6 +1219,17 @@
             <element signature="e#6389#6415#0" expanded="true" />
             <element signature="e#6401#6415#0" expanded="true" />
             <element signature="e#6444#6454#0" expanded="true" />
+            <element signature="e#6564#6598#1" expanded="true" />
+            <element signature="e#6607#6811#0" expanded="true" />
+            <element signature="e#6607#6811#0" expanded="true" />
+            <element signature="e#6617#6675#1" expanded="true" />
+            <element signature="e#6668#6714#0" expanded="true" />
+            <element signature="e#6648#6682#0" expanded="true" />
+            <element signature="e#6668#6714#0" expanded="true" />
+            <element signature="e#6729#6747#0" expanded="true" />
+            <element signature="e#6729#6747#0" expanded="true" />
+            <element signature="e#6761#6800#0" expanded="true" />
+            <element signature="e#6761#6800#0" expanded="true" />
             <element signature="e#6533#6575#1" expanded="true" />
             <element signature="e#6548#6574#0" expanded="true" />
             <element signature="e#6560#6574#0" expanded="true" />
