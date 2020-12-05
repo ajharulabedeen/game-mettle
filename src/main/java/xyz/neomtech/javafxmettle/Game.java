@@ -79,10 +79,10 @@ public class Game implements Initializable {
     @FXML
     private ImageView image_4_5;
 
-
+    List<ImageView> imageViewList = new ArrayList<>();
 
     List<Cards> cardsList = new ArrayList<>();
-    List<Cards> currentCards = new ArrayList<>();
+    List<Cards> currentCards = new ArrayList<>();//25 cards
     List<Cards> usedCards = new ArrayList<>();
     List<Cards> selectedCards = new ArrayList<>();
 
@@ -169,6 +169,13 @@ public class Game implements Initializable {
         makingCards();
     }
 
+    public void initCurrentCardList() {
+        for (int x = 0; x < 25; x++) {
+            int y = rand.nextInt(cardsList.size() - 1);
+            currentCards.add(cardsList.get(y));
+        }
+    }
+
     public void makingCards() {
         Utils.imageName.forEach(iName -> {
 //            circle_L_blue_angle.png //ref values.
@@ -216,4 +223,50 @@ public class Game implements Initializable {
         else if (s.equals("star")) shape = Shape.star;
         return shape;
     }
+
+    @FXML
+    private void image_1_1Action(){}
+    @FXML
+    private void image_1_2Action(){}
+    @FXML
+    private void image_1_3Action(){}
+    @FXML
+    private void image_1_4Action(){}
+    @FXML
+    private void image_1_5Action(){}
+
+    @FXML
+    private void image_2_1Action(){}
+    @FXML
+    private void image_2_2Action(){}
+    @FXML
+    private void image_2_3Action(){}
+    @FXML
+    private void image_2_4Action(){}
+    @FXML
+    private void image_2_5Action(){}
+
+    @FXML
+    private void image_3_1Action(){}
+    @FXML
+    private void image_3_2Action(){}
+    @FXML
+    private void image_3_3Action(){}
+    @FXML
+    private void image_3_4Action(){}
+    @FXML
+    private void image_3_5Action(){}
+
+    @FXML
+    private void image_4_1Action(){}
+    @FXML
+    private void image_4_2Action(){}
+    @FXML
+    private void image_4_3Action(){}
+    @FXML
+    private void image_4_4Action(){}
+    @FXML
+    private void image_4_5Action(){}
+
+
 }
