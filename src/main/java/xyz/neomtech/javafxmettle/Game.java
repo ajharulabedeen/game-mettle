@@ -225,48 +225,124 @@ public class Game implements Initializable {
     }
 
     @FXML
-    private void image_1_1Action(){}
-    @FXML
-    private void image_1_2Action(){}
-    @FXML
-    private void image_1_3Action(){}
-    @FXML
-    private void image_1_4Action(){}
-    @FXML
-    private void image_1_5Action(){}
+    private void image_1_1Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
 
     @FXML
-    private void image_2_1Action(){}
-    @FXML
-    private void image_2_2Action(){}
-    @FXML
-    private void image_2_3Action(){}
-    @FXML
-    private void image_2_4Action(){}
-    @FXML
-    private void image_2_5Action(){}
+    private void image_1_2Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
 
     @FXML
-    private void image_3_1Action(){}
-    @FXML
-    private void image_3_2Action(){}
-    @FXML
-    private void image_3_3Action(){}
-    @FXML
-    private void image_3_4Action(){}
-    @FXML
-    private void image_3_5Action(){}
+    private void image_1_3Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
 
     @FXML
-    private void image_4_1Action(){}
+    private void image_1_4Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
     @FXML
-    private void image_4_2Action(){}
+    private void image_1_5Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
     @FXML
-    private void image_4_3Action(){}
+    private void image_2_1Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
     @FXML
-    private void image_4_4Action(){}
+    private void image_2_2Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
     @FXML
-    private void image_4_5Action(){}
+    private void image_2_3Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_2_4Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_2_5Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_3_1Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_3_2Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_3_3Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_3_4Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_3_5Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_4_1Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_4_2Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_4_3Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_4_4Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
+
+    @FXML
+    private void image_4_5Action(MouseEvent me) throws Exception {
+        ImageView iv = (ImageView) me.getSource();
+        System.out.println(iv.getId());
+    }
 
 
 }
