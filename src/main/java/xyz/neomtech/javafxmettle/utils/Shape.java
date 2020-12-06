@@ -5,6 +5,8 @@
  */
 package xyz.neomtech.javafxmettle.utils;
 
+import javafx.scene.paint.Color;
+
 /**
  *
  * @author Dell
@@ -12,5 +14,5 @@ package xyz.neomtech.javafxmettle.utils;
 public enum Shape {
     circle,
     star,
-    heart
+    heart;
 }

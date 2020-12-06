@@ -172,16 +172,14 @@ public class Game implements Initializable {
 
     public void initCurrentCardList() {
         for (int x = 0; x < 20; x++) {
-            int y = rand.nextInt(cardsList.size() - 1);
-            currentCards.add(cardsList.get(y));
+            int randomNumber = rand.nextInt(cardsList.size() - 1);
+            currentCards.add(cardsList.get(randomNumber));
+            usedCards.add(cardsList.get(randomNumber));
+            cardsList.remove(randomNumber);
+            System.out.println("remaining cards : "+cardsList.size());
         }
         currentCards.forEach(s -> System.out.println(s));
         System.out.println(currentCards.size());
-
-//        for (int x = 0; x < 20; x++) {
-//            int y = rand.nextInt(cardsList.size() - 1);
-//            currentCards.add(cardsList.get(y));
-//        }
     }
 
     public void makingCards() {
