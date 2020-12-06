@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane id="AnchorPane" prefHeight="860.0" prefWidth="1281.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.neomtech.javafxmettle.GridPaneController">
    <children>
+      <VBox layoutX="24.0" layoutY="24.0" prefHeight="213.0" prefWidth="100.0">
+         <children>
+            <CheckBox fx:id="p1" mnemonicParsing="false" onAction="#checkBoxP1Event" text="Player 1" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <CheckBox fx:id="p2" mnemonicParsing="false" onAction="#checkBoxP2Event" text="Player 2" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <CheckBox fx:id="p3" mnemonicParsing="false" onAction="#checkBoxP3Event" text="Player 3" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <CheckBox fx:id="p4" mnemonicParsing="false" onAction="#checkBoxP4Event" text="Player 4" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
+            <Label prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+         </children>
+      </VBox>
       <GridPane fx:id="gridPane" gridLinesVisible="true" layoutX="250.0" layoutY="10.0" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: pink;">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

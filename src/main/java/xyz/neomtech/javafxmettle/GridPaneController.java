@@ -6,6 +6,8 @@
 package xyz.neomtech.javafxmettle;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.event.EventHandler;
@@ -14,11 +16,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import xyz.neomtech.javafxmettle.utils.Pattern;
+import xyz.neomtech.javafxmettle.utils.Shape;
+import xyz.neomtech.javafxmettle.utils.Size;
+import xyz.neomtech.javafxmettle.utils.Utils;
 
 import static xyz.neomtech.javafxmettle.utils.Shape.circle;
 
@@ -28,20 +36,122 @@ import static xyz.neomtech.javafxmettle.utils.Shape.circle;
 public class GridPaneController implements Initializable {
 
     @FXML
-    private Button button;
-
-    @FXML
     private GridPane gridPane;
 
     @FXML
-    private void mouseEntered(MouseEvent e) {
-        Node source = (Node) e.getSource();
-        Integer colIndex = GridPane.getColumnIndex(source);
-        Integer rowIndex = GridPane.getRowIndex(source);
-//        System.out.printf("Mouse entered cell [%d, %d]%n", colIndex.intValue(), rowIndex.intValue());
+    private CheckBox p1;
+    @FXML
+    private CheckBox p2;
+    @FXML
+    private CheckBox p3;
+    @FXML
+    private CheckBox p4;
+    @FXML
+    private Label currentPlayerLabel;
+
+    List<ImageView> imageViewList = new ArrayList<>();
+
+    List<Cards> cardsList = new ArrayList<>();
+    List<Cards> currentCards = new ArrayList<>();//25 cards
+    List<Cards> usedCards = new ArrayList<>();
+    List<Cards> selectedCards = new ArrayList<>();
+
+    Players playersCurrent = new Players();
+    Players player1 = new Players("P1");
+    Players player2 = new Players("P2");
+    Players player3 = new Players("P3");
+    Players player4 = new Players("P4");
+
+    @FXML
+    private void checkBoxGrouping(MouseEvent mouseEvent) {
+        CheckBox checkBox = (CheckBox) mouseEvent.getSource();
+        String id = checkBox.getId();
+        if (id.equals("p1")) {
+            p2.setSelected(false);
+            p3.setSelected(false);
+            p4.setSelected(false);
+            playersCurrent = player1;
+        } else if (id.equals("p2")) {
+            p1.setSelected(false);
+            p3.setSelected(false);
+            p4.setSelected(false);
+            playersCurrent = player2;
+        } else if (id.equals("p3")) {
+            p1.setSelected(false);
+            p2.setSelected(false);
+            p4.setSelected(false);
+            playersCurrent = player3;
+        } else if (id.equals("p4")) {
+            p1.setSelected(false);
+            p2.setSelected(false);
+            p4.setSelected(false);
+            playersCurrent = player4;
+        }
+        currentPlayerLabel.setText("Current Player : \n" + checkBox.getId());
     }
 
-    //Creating the mouse event handler 
+    @FXML
+    private void checkBoxP1Event(MouseEvent mouseEvent) {
+        CheckBox checkBox = (CheckBox) mouseEvent.getSource();
+        String id = checkBox.getId();
+        if (id.equals("p1")) {
+            p2.setSelected(false);
+            p3.setSelected(false);
+            p4.setSelected(false);
+            playersCurrent = player1;
+        } else if (id.equals("p2")) {
+            p1.setSelected(false);
+            p3.setSelected(false);
+            p4.setSelected(false);
+            playersCurrent = player2;
+        } else if (id.equals("p3")) {
+            p1.setSelected(false);
+            p2.setSelected(false);
+            p4.setSelected(false);
+            playersCurrent = player3;
+        } else if (id.equals("p4")) {
+            p1.setSelected(false);
+            p2.setSelected(false);
+            p4.setSelected(false);
+            playersCurrent = player4;
+        }
+        currentPlayerLabel.setText("Current Player : \n" + checkBox.getId());
+    }
+
+    @FXML
+    private void checkBoxP2Event() {
+        if (p2.isSelected()) {
+            p1.setSelected(false);
+            p3.setSelected(false);
+            p4.setSelected(false);
+        }
+        playersCurrent = player2;
+        currentPlayerLabel.setText("Current Player : \n" + player2.getName());
+    }
+
+    @FXML
+    private void checkBoxP3Event() {
+        if (p3.isSelected()) {
+            p1.setSelected(false);
+            p2.setSelected(false);
+            p4.setSelected(false);
+        }
+        playersCurrent = player3;
+        currentPlayerLabel.setText("Current Player : \n" + player3.getName());
+    }
+
+    @FXML
+    private void checkBoxP4Event() {
+        if (p4.isSelected()) {
+            p1.setSelected(false);
+            p2.setSelected(false);
+            p3.setSelected(false);
+        }
+        playersCurrent = player4;
+        currentPlayerLabel.setText("Current Player : \n" + player4.getName());
+    }
+
+    //Creating the mouse event handler
     EventHandler<javafx.scene.input.MouseEvent> eventHandler
             = new EventHandler<javafx.scene.input.MouseEvent>() {
         @Override
@@ -70,6 +180,70 @@ public class GridPaneController implements Initializable {
                 gridPane.add(imageView, col, row);
             }
         }
+    }
+
+    public void makingCards() {
+        Utils.imageName.forEach(iName -> {
+//            circle_L_blue_angle.png //ref values.
+            String[] s = iName.split("_");
+            Cards card = new Cards();
+            card.setShape(setShape(s[0]));
+            card.setSize(setSize(s[1]));
+            card.setColor(setColor(s[2]));
+            card.setPattern(setPattern(s[3]));
+            card.setImageName(iName);
+            cardsList.add(card);
+        });
+        cardsList.forEach(s -> System.out.println(s.toString()));
+    }
+
+    private Enum setPattern(String newString) {
+        String s = newString.replace(".png", "");
+        Enum pattern = null;
+        if (s.equals(Pattern.angle.toString())) {
+            pattern = Pattern.angle;
+        } else if (s.equals(Pattern.hori.toString())) {
+            pattern = Pattern.hori;
+        } else if (s.equals(Pattern.star.toString())) {
+            pattern = Pattern.star;
+        }
+        return pattern;
+    }
+
+    private Enum setColor(String s) {
+        Enum color = null;
+        if (s.equals(xyz.neomtech.javafxmettle.utils.Color.blue.toString())) {
+            color = xyz.neomtech.javafxmettle.utils.Color.blue;
+        } else if (s.equals(xyz.neomtech.javafxmettle.utils.Color.red.toString())) {
+            color = xyz.neomtech.javafxmettle.utils.Color.red;
+        } else if (s.equals(xyz.neomtech.javafxmettle.utils.Color.green.toString())) {
+            color = xyz.neomtech.javafxmettle.utils.Color.green;
+        }
+        return color;
+    }
+
+    private Enum setSize(String s) {
+        Enum size = null;
+        if (s.equals("L")) {
+            size = Size.L;
+        } else if (s.equals("m")) {
+            size = Size.m;
+        } else if (s.equals("s")) {
+            size = Size.s;
+        }
+        return size;
+    }
+
+    private Enum setShape(String s) {
+        Enum shape = null;
+        if (s.equals("circle")) {
+            shape = Shape.circle;
+        } else if (s.equals("heart")) {
+            shape = Shape.heart;
+        } else if (s.equals("star")) {
+            shape = Shape.star;
+        }
+        return shape;
     }
 
 }
