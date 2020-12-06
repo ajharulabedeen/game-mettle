@@ -84,71 +84,10 @@ public class GridPaneController implements Initializable {
         } else if (id.equals("p4")) {
             p1.setSelected(false);
             p2.setSelected(false);
-            p4.setSelected(false);
+            p3.setSelected(false);
             playersCurrent = player4;
         }
-        currentPlayerLabel.setText("Current Player : \n" + checkBox.getId());
-    }
-
-    @FXML
-    private void checkBoxP1Event(MouseEvent mouseEvent) {
-        CheckBox checkBox = (CheckBox) mouseEvent.getSource();
-        String id = checkBox.getId();
-        if (id.equals("p1")) {
-            p2.setSelected(false);
-            p3.setSelected(false);
-            p4.setSelected(false);
-            playersCurrent = player1;
-        } else if (id.equals("p2")) {
-            p1.setSelected(false);
-            p3.setSelected(false);
-            p4.setSelected(false);
-            playersCurrent = player2;
-        } else if (id.equals("p3")) {
-            p1.setSelected(false);
-            p2.setSelected(false);
-            p4.setSelected(false);
-            playersCurrent = player3;
-        } else if (id.equals("p4")) {
-            p1.setSelected(false);
-            p2.setSelected(false);
-            p4.setSelected(false);
-            playersCurrent = player4;
-        }
-        currentPlayerLabel.setText("Current Player : \n" + checkBox.getId());
-    }
-
-    @FXML
-    private void checkBoxP2Event() {
-        if (p2.isSelected()) {
-            p1.setSelected(false);
-            p3.setSelected(false);
-            p4.setSelected(false);
-        }
-        playersCurrent = player2;
-        currentPlayerLabel.setText("Current Player : \n" + player2.getName());
-    }
-
-    @FXML
-    private void checkBoxP3Event() {
-        if (p3.isSelected()) {
-            p1.setSelected(false);
-            p2.setSelected(false);
-            p4.setSelected(false);
-        }
-        playersCurrent = player3;
-        currentPlayerLabel.setText("Current Player : \n" + player3.getName());
-    }
-
-    @FXML
-    private void checkBoxP4Event() {
-        if (p4.isSelected()) {
-            p1.setSelected(false);
-            p2.setSelected(false);
-            p3.setSelected(false);
-        }
-        playersCurrent = player4;
-        currentPlayerLabel.setText("Current Player : \n" + player4.getName());
+//        currentPlayerLabel.setText("Current Player : \n" + checkBox.getId());
     }
 
     //Creating the mouse event handler
