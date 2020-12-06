@@ -8,6 +8,7 @@ package xyz.neomtech.javafxmettle;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.ResourceBundle;
 
 import javafx.event.EventHandler;
@@ -52,7 +53,8 @@ public class GridPaneController implements Initializable {
     List<ImageView> imageViewList = new ArrayList<>();
 
     List<Cards> cardsList = new ArrayList<>();
-    List<Cards> currentCards = new ArrayList<>();//25 cards
+//    List<Cards> currentCards = new ArrayList<>();//20 cards
+    Cards[][] currentCards = new Cards[4][5];
     List<Cards> usedCards = new ArrayList<>();
     List<Cards> selectedCards = new ArrayList<>();
 
@@ -104,6 +106,35 @@ public class GridPaneController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         initGridPaneWithImage();
+        makingCards();
+        initCurrentCardList();
+    }
+
+    Random random = new Random();
+
+    public void initCurrentCardList() {
+        for (int row = 0; row < 4; row++) {
+            for (int col = 0; col < 5; col++) {
+                int randomNumber = random.nextInt((cardsList.size() - 1));
+                currentCards[row][col] = cardsList.get(randomNumber);
+                cardsList.remove(randomNumber);
+            }
+        }
+        for (int row = 0; row < 4; row++) {
+            for (int col = 0; col < 5; col++) {
+                System.out.println(currentCards[row][col]);
+            }
+        }
+        System.out.println(cardsList.size());
+//        for (int x = 0; x < 20; x++) {
+//            int randomNumber = random.nextInt(cardsList.size() - 1);
+//            currentCards.add(cardsList.get(randomNumber));
+//            usedCards.add(cardsList.get(randomNumber));
+//            cardsList.remove(randomNumber);
+//            System.out.println("remaining cards : " + cardsList.size());
+//        }
+//        currentCards.forEach(s -> System.out.println(s));
+//        System.out.println(currentCards.size());for
     }
 
     private void initGridPaneWithImage() {
