@@ -7,6 +7,7 @@ package xyz.neomtech.javafxmettle;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;
@@ -65,6 +66,11 @@ public class GridPaneController implements Initializable {
     Players player4 = new Players("P4");
 
     @FXML
+    private void submitButtonAction() {
+        selectedCards.forEach(s -> System.out.println(s));
+    }
+
+    @FXML
     private void checkBoxGrouping(MouseEvent mouseEvent) {
         CheckBox checkBox = (CheckBox) mouseEvent.getSource();
         String id = checkBox.getId();
@@ -89,6 +95,7 @@ public class GridPaneController implements Initializable {
             p3.setSelected(false);
             playersCurrent = player4;
         }
+        selectedCards.clear();
 //        currentPlayerLabel.setText("Current Player : \n" + checkBox.getId());
     }
 
@@ -100,12 +107,21 @@ public class GridPaneController implements Initializable {
             ImageView imageView = (ImageView) e.getSource();
             int row = Integer.parseInt(imageView.getId().split("")[0]);
             int col = Integer.parseInt(imageView.getId().split("")[1]);
+
             if (!currentCards[row][col].turnedOver) {
                 String imageName = currentCards[row][col].getImageName();
                 imageView.setImage(getImage(imageName));
                 currentCards[row][col].setTurnedOver(true);
             }
-            System.out.println("ImageView Clicked!");
+            if (selectedCards.size() > 1) {
+                for (Iterator<Cards> iterator = selectedCards.iterator(); iterator.hasNext();) {
+                    Cards cards = iterator.next();
+                    if (cards.equals(currentCards[row][col])) {
+                        System.out.println("MATCH FOUND!");
+//                        selectedCards.add(currentCards[row][col]);
+                    }
+                }
+            }
             System.out.println("ImageView ID : " + imageView.getId());
         }
     };
@@ -151,7 +167,9 @@ public class GridPaneController implements Initializable {
                 imageView.setFitHeight(200);
                 imageView.setFitWidth(200);
                 imageView.setId(Integer.toString(row) + Integer.toString(col));
-                imageView.setImage(getImage("block.png"));
+//                imageView.setImage(getImage("block.png"));
+                imageView.setImage(getImage("block.jpg"));
+                imageView.setRotate(imageView.getRotate() + 90);
                 imageView.addEventHandler(javafx.scene.input.MouseEvent.MOUSE_CLICKED, eventHandler);
                 gridPane.add(imageView, col, row);
             }

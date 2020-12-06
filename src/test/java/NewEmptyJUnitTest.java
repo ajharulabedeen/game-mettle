@@ -26,13 +26,13 @@ public class NewEmptyJUnitTest {
 //     TODO: add test methods here.
 //     The methods must be annotated with annotation @Test. For example:
 
-//    @Test
+    //    @Test
     public void hello() {
         System.out.println("Hellow World!");
         Utils.printImageName();
     }
 
-//    @Test
+    //    @Test
     public void printAllNames() {
 //        Utils.printImageName();
         Utils.imageName.forEach(iName -> {
@@ -49,25 +49,27 @@ public class NewEmptyJUnitTest {
         Cards card1 = new Cards();
         card1.setColor(Color.red);
         card1.setSize(Size.L);
-        card1.setShape(Shape.circle);
         card1.setPattern(Pattern.hori);
 
         Cards card2 = new Cards();
         card2.setColor(Color.green);
         card2.setSize(Size.L);
-        card2.setShape(Shape.circle);
         card2.setPattern(Pattern.hori);
 
         Cards card3 = new Cards();
         card3.setColor(Color.green);
         card3.setSize(Size.m);
-        card3.setShape(Shape.heart);
         card3.setPattern(Pattern.angle);
 
-        System.out.println(card1.equals(card2));
-        System.out.println(card1.equals(card3));
-        assertEquals(card1, card2);
-        assertEquals(card1, card3);
+//        c1 = red-L-hori
+//        c2 = green-L-hori
+//        c3 = green-m-angle
+        
+        System.out.println("C1:C2 = " + card1.equals(card2));
+        System.out.println("C2:C3 = " + card2.equals(card3));
+        System.out.println("C1:C3 = " + card1.equals(card3));
+//        assertEquals(card1, card2);
+//        assertEquals(card1, card3);
 
     }
 }

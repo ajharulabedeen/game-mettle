@@ -98,7 +98,7 @@ public class Cards {
 //        if (o == null || getClass() != o.getClass()) return false;
         Cards cards = (Cards) o;
         return  size.equals(cards.size) ||
-                shape.equals(cards.shape)||
+//                shape.equals(cards.shape)||
                 color.equals(cards.color) ||
                 pattern.equals(cards.pattern);
     }
