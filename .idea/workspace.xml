@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java" afterDir="false" />
-    </list>
+    <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -105,8 +103,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/gridPane.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="124">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -114,8 +112,8 @@
       <file leaf-file-name="GridPaneController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="114" column="58" selection-start-line="114" selection-start-column="58" selection-end-line="114" selection-end-column="58" />
+            <state relative-caret-position="409">
+              <caret line="125" selection-start-line="116" selection-end-line="125" />
               <folding>
                 <element signature="e#1414#1431#0" expanded="true" />
                 <element signature="e#1462#1479#0" expanded="true" />
@@ -629,7 +627,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48282000" />
+    <option name="totallyTimeSpent" value="49048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -663,7 +661,7 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32909605" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27966103" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46327683" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.20762712" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22214764" />
       <window_info anchor="right" id="ReST Console" order="3" />
@@ -972,8 +970,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/xyz/neomtech/javafxmettle/gridPane.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="124">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1676,8 +1674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="114" column="58" selection-start-line="114" selection-start-column="58" selection-end-line="114" selection-end-column="58" />
+        <state relative-caret-position="409">
+          <caret line="125" selection-start-line="116" selection-end-line="125" />
           <folding>
             <element signature="e#1414#1431#0" expanded="true" />
             <element signature="e#1462#1479#0" expanded="true" />

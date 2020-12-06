@@ -83,8 +83,8 @@ public class Cards {
     @Override
     public String toString() {
         return "Cards{" +
-                "size=" + size +
-                ", shape=" + shape +
+                "shape=" + shape +
+                "  size=" + size +
                 ", color=" + color +
                 ", pattern=" + pattern +
                 ", imageName='" + imageName + '\'' +

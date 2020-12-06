@@ -107,22 +107,31 @@ public class GridPaneController implements Initializable {
             ImageView imageView = (ImageView) e.getSource();
             int row = Integer.parseInt(imageView.getId().split("")[0]);
             int col = Integer.parseInt(imageView.getId().split("")[1]);
-
-            if (!currentCards[row][col].turnedOver) {
-                String imageName = currentCards[row][col].getImageName();
+            Cards selectedCard = currentCards[row][col];
+            if (!selectedCard.turnedOver) {
+                String imageName = selectedCard.getImageName();
                 imageView.setImage(getImage(imageName));
                 currentCards[row][col].setTurnedOver(true);
-                selectedCards.add(currentCards[row][col]);
+                selectedCards.add(selectedCard);
             }
-//            if (selectedCards.size() > 1) {
+            if (selectedCards.size() > 1) {
+                for (int i = 0; i < selectedCards.size(); i++) {
+                    if (selectedCards.get(i).equals(selectedCard)) {
+                        System.out.println("MATCH-TRUE");
+                        System.out.println("--" + selectedCard.toString());
+                        System.out.println("==" + selectedCards.get(i).toString());
+                    }else{
+                        System.out.println("MATCH-FALSE");
+                    }
+                }
 //                for (Iterator<Cards> iterator = selectedCards.iterator(); iterator.hasNext();) {
 //                    Cards cards = iterator.next();
-//                    if (cards.equals(currentCards[row][col])) {
+//                    if (cards.equals(selectedCard)) {
 //                        System.out.println("MATCH FOUND!");
 ////                        selectedCards.add(currentCards[row][col]);
 //                    }
 //                }
-//            }
+            }
             System.out.println("ImageView ID : " + imageView.getId());
         }
     };
