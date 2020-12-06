@@ -53,7 +53,7 @@ public class GridPaneController implements Initializable {
     List<ImageView> imageViewList = new ArrayList<>();
 
     List<Cards> cardsList = new ArrayList<>();
-//    List<Cards> currentCards = new ArrayList<>();//20 cards
+    //    List<Cards> currentCards = new ArrayList<>();//20 cards
     Cards[][] currentCards = new Cards[4][5];
     List<Cards> usedCards = new ArrayList<>();
     List<Cards> selectedCards = new ArrayList<>();
@@ -98,6 +98,13 @@ public class GridPaneController implements Initializable {
         @Override
         public void handle(javafx.scene.input.MouseEvent e) {
             ImageView imageView = (ImageView) e.getSource();
+            int row = Integer.parseInt(imageView.getId().split("")[0]);
+            int col = Integer.parseInt(imageView.getId().split("")[1]);
+            Cards cards = currentCards[row][col];
+            if (!cards.turnedOver) {
+                String imageName = cards.getImageName();
+//                Image image =
+            }
             System.out.println("ImageView Clicked!");
             System.out.println("ImageView ID : " + imageView.getId());
         }
@@ -144,12 +151,15 @@ public class GridPaneController implements Initializable {
                 imageView.setFitHeight(200);
                 imageView.setFitWidth(200);
                 imageView.setId(Integer.toString(row) + Integer.toString(col));
-                Image image = new Image("images/" + "block.png");
-                imageView.setImage(image);
+                imageView.setImage(getImage("block"));
                 imageView.addEventHandler(javafx.scene.input.MouseEvent.MOUSE_CLICKED, eventHandler);
                 gridPane.add(imageView, col, row);
             }
         }
+    }
+
+    private Image getImage(String name) {
+        return new Image("images/" + name + ".png");
     }
 
     public void makingCards() {
