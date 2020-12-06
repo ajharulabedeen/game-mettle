@@ -112,16 +112,17 @@ public class GridPaneController implements Initializable {
                 String imageName = currentCards[row][col].getImageName();
                 imageView.setImage(getImage(imageName));
                 currentCards[row][col].setTurnedOver(true);
+                selectedCards.add(currentCards[row][col]);
             }
-            if (selectedCards.size() > 1) {
-                for (Iterator<Cards> iterator = selectedCards.iterator(); iterator.hasNext();) {
-                    Cards cards = iterator.next();
-                    if (cards.equals(currentCards[row][col])) {
-                        System.out.println("MATCH FOUND!");
-//                        selectedCards.add(currentCards[row][col]);
-                    }
-                }
-            }
+//            if (selectedCards.size() > 1) {
+//                for (Iterator<Cards> iterator = selectedCards.iterator(); iterator.hasNext();) {
+//                    Cards cards = iterator.next();
+//                    if (cards.equals(currentCards[row][col])) {
+//                        System.out.println("MATCH FOUND!");
+////                        selectedCards.add(currentCards[row][col]);
+//                    }
+//                }
+//            }
             System.out.println("ImageView ID : " + imageView.getId());
         }
     };
