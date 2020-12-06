@@ -43,6 +43,8 @@ public class GridPaneController implements Initializable {
 
     @FXML
     private GridPane gridPane;
+    @FXML
+    Label cardRemains;
 
     @FXML
     private CheckBox p1;
@@ -54,6 +56,8 @@ public class GridPaneController implements Initializable {
     private CheckBox p4;
     @FXML
     private Label currentPlayerLabel;
+
+    int remainingCards = 81;
 
     List<ImageView> imageViewList = new ArrayList<>();
 
@@ -72,6 +76,21 @@ public class GridPaneController implements Initializable {
     @FXML
     private void submitButtonAction() {
         selectedCards.forEach(s -> System.out.println(s));
+        selectedCards.forEach(c -> {
+            cardsList.remove(c);
+            currentCards[c.row][c.column] = getRandomCard();
+//            Parent parent = (Parent) gridPane.getParent();
+//            ImageView iv = (ImageView) parent.lookup(c.selectedImageID);
+//            iv.setImage(getImage(Utils.blurImage));
+        });
+        cardRemains.setText(Integer.toString(cardsList.size()));
+        selectedCards.clear();
+    }
+
+    public Cards getRandomCard() {
+        int index = random.nextInt(cardsList.size());
+        Cards c = cardsList.get(index);
+        return c;
     }
 
     @FXML
@@ -129,10 +148,10 @@ public class GridPaneController implements Initializable {
                         System.out.println("==" + selectedCards.get(i).toString());
                     } else {
                         System.out.println("MATCH-FALSE");
-//                        try {
-//                            Thread.sleep(3000);
-//                        } catch (InterruptedException ex) {
-//                        }
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException ex) {
+                        }
                         //TODO: Rebulr Images.
                         for (int j = 0; j < selectedCards.size(); j++) {
                             Cards c = selectedCards.get(j);
@@ -165,6 +184,7 @@ public class GridPaneController implements Initializable {
                 int randomNumber = random.nextInt((cardsList.size() - 1));
                 currentCards[row][col] = cardsList.get(randomNumber);
                 cardsList.remove(randomNumber);
+                remainingCards--;
             }
         }
         for (int row = 0; row < 4; row++) {
@@ -172,6 +192,7 @@ public class GridPaneController implements Initializable {
                 System.out.println(currentCards[row][col]);
             }
         }
+        cardRemains.setText(Integer.toString(remainingCards));
         System.out.println(cardsList.size());
 //        for (int x = 0; x < 20; x++) {
 //            int randomNumber = random.nextInt(cardsList.size() - 1);
