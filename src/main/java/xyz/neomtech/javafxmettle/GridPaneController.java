@@ -79,9 +79,9 @@ public class GridPaneController implements Initializable {
         selectedCards.forEach(c -> {
             cardsList.remove(c);
             currentCards[c.row][c.column] = getRandomCard();
-//            Parent parent = (Parent) gridPane.getParent();
-//            ImageView iv = (ImageView) parent.lookup(c.selectedImageID);
-//            iv.setImage(getImage(Utils.blurImage));
+            Parent parent = (Parent) gridPane.getParent();
+            ImageView iv = (ImageView) parent.lookup("#" + c.selectedImageID);
+            iv.setImage(getImage(Utils.blurImage));
         });
         cardRemains.setText(Integer.toString(cardsList.size()));
         selectedCards.clear();
