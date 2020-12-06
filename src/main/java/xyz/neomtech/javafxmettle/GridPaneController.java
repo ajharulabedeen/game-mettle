@@ -11,15 +11,19 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javafx.event.EventHandler;
 import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -112,7 +116,10 @@ public class GridPaneController implements Initializable {
                 String imageName = selectedCard.getImageName();
                 imageView.setImage(getImage(imageName));
                 currentCards[row][col].setTurnedOver(true);
+                selectedCard.setSelectedImageID(imageView.getId());
                 selectedCards.add(selectedCard);
+                selectedCard.setRow(row);
+                selectedCard.setColumn(col);
             }
             if (selectedCards.size() > 1) {
                 for (int i = 0; i < selectedCards.size(); i++) {
@@ -120,17 +127,24 @@ public class GridPaneController implements Initializable {
                         System.out.println("MATCH-TRUE");
                         System.out.println("--" + selectedCard.toString());
                         System.out.println("==" + selectedCards.get(i).toString());
-                    }else{
+                    } else {
                         System.out.println("MATCH-FALSE");
+//                        try {
+//                            Thread.sleep(3000);
+//                        } catch (InterruptedException ex) {
+//                        }
+                        //TODO: Rebulr Images.
+                        for (int j = 0; j < selectedCards.size(); j++) {
+                            Cards c = selectedCards.get(j);
+                            Parent parent = gridPane.getParent(); // the Parent (or Scene) that contains the TextFields
+                            ImageView iv = (ImageView) parent.lookup("#" + c.getSelectedImageID());
+                            iv.setImage(getImage(Utils.blurImage));
+                            currentCards[c.row][c.column].setTurnedOver(false);
+                        }
+                        //TODO:REMOVE
+                        selectedCards.clear();
                     }
                 }
-//                for (Iterator<Cards> iterator = selectedCards.iterator(); iterator.hasNext();) {
-//                    Cards cards = iterator.next();
-//                    if (cards.equals(selectedCard)) {
-//                        System.out.println("MATCH FOUND!");
-////                        selectedCards.add(currentCards[row][col]);
-//                    }
-//                }
             }
             System.out.println("ImageView ID : " + imageView.getId());
         }

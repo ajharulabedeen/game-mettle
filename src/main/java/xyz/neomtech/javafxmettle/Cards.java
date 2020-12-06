@@ -16,8 +16,11 @@ public class Cards {
     public Enum shape;
     public Enum color;
     public Enum pattern;
-    public String imageName="";
-    public boolean turnedOver=false;
+    public String imageName = "";
+    public boolean turnedOver = false;
+    public String selectedImageID;
+    public int row;
+    public int column;
 
     public Cards() {
 
@@ -80,16 +83,40 @@ public class Cards {
         this.turnedOver = turnedOver;
     }
 
+    public String getSelectedImageID() {
+        return selectedImageID;
+    }
+
+    public void setSelectedImageID(String selectedImageID) {
+        this.selectedImageID = selectedImageID;
+    }
+
+    public int getRow() {
+        return row;
+    }
+
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public int getColumn() {
+        return column;
+    }
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
     @Override
     public String toString() {
-        return "Cards{" +
-                "shape=" + shape +
-                "  size=" + size +
-                ", color=" + color +
-                ", pattern=" + pattern +
-                ", imageName='" + imageName + '\'' +
-                ", turnedOver=" + turnedOver +
-                '}';
+        return "Cards{"
+                + "shape=" + shape
+                + "  size=" + size
+                + ", color=" + color
+                + ", pattern=" + pattern
+                + ", imageName='" + imageName + '\''
+                + ", turnedOver=" + turnedOver
+                + '}';
     }
 
     @Override
@@ -97,9 +124,9 @@ public class Cards {
 //        if (this == o) return true;
 //        if (o == null || getClass() != o.getClass()) return false;
         Cards cards = (Cards) o;
-        return  size.equals(cards.size) ||
-//                shape.equals(cards.shape)||
-                color.equals(cards.color) ||
-                pattern.equals(cards.pattern);
+        return size.equals(cards.size)
+                || //                shape.equals(cards.shape)||
+                color.equals(cards.color)
+                || pattern.equals(cards.pattern);
     }
 }
