@@ -47,6 +47,23 @@ public class GridPaneController implements Initializable {
     Label cardRemains;
 
     @FXML
+    Label p1Score;
+    @FXML
+    Label p1Term;
+    @FXML
+    Label p2Score;
+    @FXML
+    Label p2Term;
+    @FXML
+    Label p3Score;
+    @FXML
+    Label p3Term;
+    @FXML
+    Label p4Score;
+    @FXML
+    Label p4Term;
+
+    @FXML
     private CheckBox p1;
     @FXML
     private CheckBox p2;
@@ -82,9 +99,13 @@ public class GridPaneController implements Initializable {
             Parent parent = (Parent) gridPane.getParent();
             ImageView iv = (ImageView) parent.lookup("#" + c.selectedImageID);
             iv.setImage(getImage(Utils.blurImage));
+            playersCurrent.setScore(playersCurrent.getScore() + 1);
         });
-        cardRemains.setText(Integer.toString(cardsList.size()));
+        if (playersCurrent.name.equals("P1")) {
+            cardRemains.setText(Integer.toString(cardsList.size()));
+        }
         selectedCards.clear();
+
     }
 
     public Cards getRandomCard() {
@@ -194,15 +215,6 @@ public class GridPaneController implements Initializable {
         }
         cardRemains.setText(Integer.toString(remainingCards));
         System.out.println(cardsList.size());
-//        for (int x = 0; x < 20; x++) {
-//            int randomNumber = random.nextInt(cardsList.size() - 1);
-//            currentCards.add(cardsList.get(randomNumber));
-//            usedCards.add(cardsList.get(randomNumber));
-//            cardsList.remove(randomNumber);
-//            System.out.println("remaining cards : " + cardsList.size());
-//        }
-//        currentCards.forEach(s -> System.out.println(s));
-//        System.out.println(currentCards.size());for
     }
 
     private void initGridPaneWithImage() {
