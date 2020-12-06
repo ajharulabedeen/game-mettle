@@ -11,20 +11,20 @@
 
 <AnchorPane id="AnchorPane" prefHeight="860.0" prefWidth="1281.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.neomtech.javafxmettle.GridPaneController">
    <children>
-      <VBox layoutX="24.0" layoutY="24.0" prefHeight="213.0" prefWidth="100.0">
+      <VBox layoutX="24.0" layoutY="24.0" prefHeight="214.0" prefWidth="122.0">
          <children>
             <CheckBox fx:id="p1" mnemonicParsing="false" onMouseClicked="#checkBoxGrouping" text="Player 1" />
             <Label fx:id="p1Score" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
-            <Label fx:id="p1Term" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <Label fx:id="p1Term" prefHeight="18.0" prefWidth="123.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
             <CheckBox fx:id="p2" mnemonicParsing="false" onMouseClicked="#checkBoxGrouping" text="Player 2" />
             <Label fx:id="p2Score" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
-            <Label fx:id="p2Term" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <Label fx:id="p2Term" prefHeight="18.0" prefWidth="123.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
             <CheckBox fx:id="p3" mnemonicParsing="false" onMouseClicked="#checkBoxGrouping" text="Player 3" />
             <Label fx:id="p3Score" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
-            <Label fx:id="p3Term" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <Label fx:id="p3Term" prefHeight="18.0" prefWidth="123.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
             <CheckBox fx:id="p4" mnemonicParsing="false" onMouseClicked="#checkBoxGrouping" text="Player 4" />
             <Label fx:id="p4Score" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Score :" />
-            <Label fx:id="p4Term" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
+            <Label fx:id="p4Term" prefHeight="18.0" prefWidth="122.0" style="-fx-background-color: pink; -fx-alignment: center;" text="Term Played:" />
          </children>
       </VBox>
       <GridPane fx:id="gridPane" gridLinesVisible="true" layoutX="250.0" layoutY="10.0" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: pink;">

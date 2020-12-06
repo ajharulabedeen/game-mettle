@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java" afterDir="false" />
-    </list>
+    <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="233" selection-start-line="233" selection-end-line="233" />
+              <caret line="237" selection-start-line="237" selection-end-line="237" />
               <folding>
                 <element signature="e#1838#1855#0" expanded="true" />
                 <element signature="e#1886#1903#0" expanded="true" />
@@ -568,7 +566,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53793000" />
+    <option name="totallyTimeSpent" value="54706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1492,7 +1490,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="233" selection-start-line="233" selection-end-line="233" />
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
           <folding>
             <element signature="e#1838#1855#0" expanded="true" />
             <element signature="e#1886#1903#0" expanded="true" />

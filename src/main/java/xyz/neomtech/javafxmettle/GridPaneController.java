@@ -105,18 +105,22 @@ public class GridPaneController implements Initializable {
             player1 = playersCurrent;
             p1Score.setText("Score : " + Integer.toString(player1.getScore()));
             p1.setSelected(false);
+//            p1Term.setText("Term Played : " + Integer.toString(player1.getTermPlayed()));
         } else if (playersCurrent.name.equals("P2")) {
             player2 = playersCurrent;
             p2Score.setText("Score : " + Integer.toString(player2.getScore()));
             p2.setSelected(false);
+//            p2Term.setText("Term Played : " + Integer.toString(player2.getTermPlayed()));
         } else if (playersCurrent.name.equals("P3")) {
             player3 = playersCurrent;
             p3Score.setText("Score : " + Integer.toString(player3.getScore()));
             p3.setSelected(false);
+//            p3Term.setText("Term Played : " + Integer.toString(player3.getTermPlayed()));
         } else if (playersCurrent.name.equals("P4")) {
             player4 = playersCurrent;
             p4Score.setText("Score : " + Integer.toString(player4.getScore()));
             p4.setSelected(false);
+//            p4Term.setText("Term Played : " + Integer.toString(player4.getTermPlayed()));
         }
         cardRemains.setText(Integer.toString(cardsList.size()));
         selectedCards.clear();
@@ -165,6 +169,7 @@ public class GridPaneController implements Initializable {
         @Override
         public void handle(javafx.scene.input.MouseEvent e) {
             if (playersCurrent != null) {
+//                playersCurrent.setTermPlayed(playersCurrent.getTermPlayed() + 1);
                 ImageView imageView = (ImageView) e.getSource();
                 int row = Integer.parseInt(imageView.getId().split("")[0]);
                 int col = Integer.parseInt(imageView.getId().split("")[1]);
@@ -200,10 +205,45 @@ public class GridPaneController implements Initializable {
                             }
                             //TODO:REMOVE
                             selectedCards.clear();
+
+                            if (playersCurrent.name.equals("P1")) {
+                                player1 = playersCurrent;
+                                p1.setSelected(false);
+                                player1.setTermPlayed(player1.getTermPlayed() + 1);
+                                p1Term.setText("Term Played : " + Integer.toString(player1.getTermPlayed()));
+                            } else if (playersCurrent.name.equals("P2")) {
+                                player2 = playersCurrent;
+                                p2.setSelected(false);
+                                player2.setTermPlayed(player2.getTermPlayed() + 1);
+                                p2Term.setText("Term Played : " + Integer.toString(player2.getTermPlayed()));
+                            } else if (playersCurrent.name.equals("P3")) {
+                                player3 = playersCurrent;
+                                p3.setSelected(false);
+                                player3.setTermPlayed(player3.getTermPlayed() + 1);
+                                p3Term.setText("Term Played : " + Integer.toString(player3.getTermPlayed()));
+                            } else if (playersCurrent.name.equals("P4")) {
+                                player4 = playersCurrent;
+                                p4.setSelected(false);
+                                player4.setTermPlayed(player4.getTermPlayed() + 1);
+                                p4Term.setText("Term Played : " + Integer.toString(player4.getTermPlayed()));
+                            }
+                            
+                            
+                            playersCurrent = null;
                         }
                     }
                 }
                 System.out.println("ImageView ID : " + imageView.getId());
+
+//                if (playersCurrent.name.equals("P1")) {
+//                    p1Term.setText("Term Played : " + Integer.toString(player1.getTermPlayed()));
+//                } else if (playersCurrent.name.equals("P2")) {
+//                    p2Term.setText("Term Played : " + Integer.toString(player2.getTermPlayed()));
+//                } else if (playersCurrent.name.equals("P3")) {
+//                    p3Term.setText("Term Played : " + Integer.toString(player3.getTermPlayed()));
+//                } else if (playersCurrent.name.equals("P4")) {
+//                    p4Term.setText("Term Played : " + Integer.toString(player4.getTermPlayed()));
+//                }
             } else {
                 System.out.println("Please Select A Player First!");
             }
