@@ -461,7 +461,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NewEmptyJUnitTest.testObjectEquals">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.neomtech.javafxmettle.App" />
       <module name="javaFXMettle" />
@@ -573,8 +573,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NewEmptyJUnitTest.testObjectEquals" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.NewEmptyJUnitTest.testObjectEquals" />
         <item itemvalue="JUnit.NewEmptyJUnitTest.printAllNames" />
         <item itemvalue="JUnit.NewEmptyJUnitTest" />
       </list>
