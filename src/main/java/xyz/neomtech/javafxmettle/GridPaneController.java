@@ -84,7 +84,7 @@ public class GridPaneController implements Initializable {
     List<Cards> usedCards = new ArrayList<>();
     List<Cards> selectedCards = new ArrayList<>();
 
-    Players playersCurrent = new Players();
+    Players playersCurrent = null;
     Players player1 = new Players("P1");
     Players player2 = new Players("P2");
     Players player3 = new Players("P3");
@@ -102,9 +102,21 @@ public class GridPaneController implements Initializable {
             playersCurrent.setScore(playersCurrent.getScore() + 1);
         });
         if (playersCurrent.name.equals("P1")) {
-            cardRemains.setText(Integer.toString(cardsList.size()));
+            player1 = playersCurrent;
+            p1Score.setText(Integer.toString(player1.getScore()));
+        } else if (playersCurrent.name.equals("P2")) {
+            player2 = playersCurrent;
+            p1Score.setText(Integer.toString(player2.getScore()));
+        } else if (playersCurrent.name.equals("P3")) {
+            player3 = playersCurrent;
+            p1Score.setText(Integer.toString(player3.getScore()));
+        } else if (playersCurrent.name.equals("P4")) {
+            player4 = playersCurrent;
+            p1Score.setText(Integer.toString(player4.getScore()));
         }
+        cardRemains.setText(Integer.toString(cardsList.size()));
         selectedCards.clear();
+        playersCurrent = null;
 
     }
 
@@ -148,45 +160,49 @@ public class GridPaneController implements Initializable {
             = new EventHandler<javafx.scene.input.MouseEvent>() {
         @Override
         public void handle(javafx.scene.input.MouseEvent e) {
-            ImageView imageView = (ImageView) e.getSource();
-            int row = Integer.parseInt(imageView.getId().split("")[0]);
-            int col = Integer.parseInt(imageView.getId().split("")[1]);
-            Cards selectedCard = currentCards[row][col];
-            if (!selectedCard.turnedOver) {
-                String imageName = selectedCard.getImageName();
-                imageView.setImage(getImage(imageName));
-                currentCards[row][col].setTurnedOver(true);
-                selectedCard.setSelectedImageID(imageView.getId());
-                selectedCards.add(selectedCard);
-                selectedCard.setRow(row);
-                selectedCard.setColumn(col);
-            }
-            if (selectedCards.size() > 1) {
-                for (int i = 0; i < selectedCards.size(); i++) {
-                    if (selectedCards.get(i).equals(selectedCard)) {
-                        System.out.println("MATCH-TRUE");
-                        System.out.println("--" + selectedCard.toString());
-                        System.out.println("==" + selectedCards.get(i).toString());
-                    } else {
-                        System.out.println("MATCH-FALSE");
-                        try {
-                            Thread.sleep(1000);
-                        } catch (InterruptedException ex) {
+            if (playersCurrent != null) {
+                ImageView imageView = (ImageView) e.getSource();
+                int row = Integer.parseInt(imageView.getId().split("")[0]);
+                int col = Integer.parseInt(imageView.getId().split("")[1]);
+                Cards selectedCard = currentCards[row][col];
+                if (!selectedCard.turnedOver) {
+                    String imageName = selectedCard.getImageName();
+                    imageView.setImage(getImage(imageName));
+                    currentCards[row][col].setTurnedOver(true);
+                    selectedCard.setSelectedImageID(imageView.getId());
+                    selectedCards.add(selectedCard);
+                    selectedCard.setRow(row);
+                    selectedCard.setColumn(col);
+                }
+                if (selectedCards.size() > 1) {
+                    for (int i = 0; i < selectedCards.size(); i++) {
+                        if (selectedCards.get(i).equals(selectedCard)) {
+                            System.out.println("MATCH-TRUE");
+                            System.out.println("--" + selectedCard.toString());
+                            System.out.println("==" + selectedCards.get(i).toString());
+                        } else {
+                            System.out.println("MATCH-FALSE");
+                            try {
+                                Thread.sleep(1000);
+                            } catch (InterruptedException ex) {
+                            }
+                            //TODO: Rebulr Images.
+                            for (int j = 0; j < selectedCards.size(); j++) {
+                                Cards c = selectedCards.get(j);
+                                Parent parent = gridPane.getParent(); // the Parent (or Scene) that contains the TextFields
+                                ImageView iv = (ImageView) parent.lookup("#" + c.getSelectedImageID());
+                                iv.setImage(getImage(Utils.blurImage));
+                                currentCards[c.row][c.column].setTurnedOver(false);
+                            }
+                            //TODO:REMOVE
+                            selectedCards.clear();
                         }
-                        //TODO: Rebulr Images.
-                        for (int j = 0; j < selectedCards.size(); j++) {
-                            Cards c = selectedCards.get(j);
-                            Parent parent = gridPane.getParent(); // the Parent (or Scene) that contains the TextFields
-                            ImageView iv = (ImageView) parent.lookup("#" + c.getSelectedImageID());
-                            iv.setImage(getImage(Utils.blurImage));
-                            currentCards[c.row][c.column].setTurnedOver(false);
-                        }
-                        //TODO:REMOVE
-                        selectedCards.clear();
                     }
                 }
+                System.out.println("ImageView ID : " + imageView.getId());
+            } else {
+                System.out.println("Please Select A Player First!");
             }
-            System.out.println("ImageView ID : " + imageView.getId());
         }
     };
 
