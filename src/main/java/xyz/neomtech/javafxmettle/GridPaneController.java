@@ -102,13 +102,23 @@ public class GridPaneController implements Initializable {
             Parent parent = (Parent) gridPane.getParent();
             ImageView iv = (ImageView) parent.lookup("#" + c.selectedImageID);
             iv.setImage(getImage(Utils.blurImage));
-            playersCurrent.setScore(playersCurrent.getScore() + 2);
+            playersCurrent.setScore(playersCurrent.getScore() +1);
             matchCount++;
-            if (matchCount > 1) {
+            if (matchCount > 2) {
                 playersCurrent.setScore(playersCurrent.getScore() + 2);
             }
         });
 
+        updateScore();
+        updateTermPlayed();
+
+        cardRemains.setText(Integer.toString(cardsList.size()));
+        selectedCards.clear();
+        playersCurrent = null;
+
+    }
+
+    private void updateScore() {
         if (playersCurrent.name.equals("P1")) {
             player1 = playersCurrent;
             p1Score.setText("Score : " + Integer.toString(player1.getScore()));
@@ -126,12 +136,6 @@ public class GridPaneController implements Initializable {
             p4Score.setText("Score : " + Integer.toString(player4.getScore()));
             p4.setSelected(false);
         }
-
-
-        cardRemains.setText(Integer.toString(cardsList.size()));
-        selectedCards.clear();
-        playersCurrent = null;
-
     }
 
     public Cards getRandomCard() {
@@ -217,16 +221,6 @@ public class GridPaneController implements Initializable {
                     }
                 }
                 System.out.println("ImageView ID : " + imageView.getId());
-
-//                if (playersCurrent.name.equals("P1")) {
-//                    p1Term.setText("Term Played : " + Integer.toString(player1.getTermPlayed()));
-//                } else if (playersCurrent.name.equals("P2")) {
-//                    p2Term.setText("Term Played : " + Integer.toString(player2.getTermPlayed()));
-//                } else if (playersCurrent.name.equals("P3")) {
-//                    p3Term.setText("Term Played : " + Integer.toString(player3.getTermPlayed()));
-//                } else if (playersCurrent.name.equals("P4")) {
-//                    p4Term.setText("Term Played : " + Integer.toString(player4.getTermPlayed()));
-//                }
             } else {
                 System.out.println("Please Select A Player First!");
             }
