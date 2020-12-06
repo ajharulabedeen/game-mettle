@@ -90,16 +90,23 @@ public class GridPaneController implements Initializable {
     Players player3 = new Players("P3");
     Players player4 = new Players("P4");
 
+    int matchCount = 0;
+
     @FXML
     private void submitButtonAction() {
         selectedCards.forEach(s -> System.out.println(s));
+        matchCount = 0;
         selectedCards.forEach(c -> {
             cardsList.remove(c);
             currentCards[c.row][c.column] = getRandomCard();
             Parent parent = (Parent) gridPane.getParent();
             ImageView iv = (ImageView) parent.lookup("#" + c.selectedImageID);
             iv.setImage(getImage(Utils.blurImage));
-            playersCurrent.setScore(playersCurrent.getScore() + 1);
+            playersCurrent.setScore(playersCurrent.getScore() + 2);
+            matchCount++;
+            if (matchCount > 1) {
+                playersCurrent.setScore(playersCurrent.getScore() + 2);
+            }
         });
 
         if (playersCurrent.name.equals("P1")) {
