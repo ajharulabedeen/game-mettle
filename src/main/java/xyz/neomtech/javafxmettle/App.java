@@ -18,7 +18,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 //        scene = new Scene(loadFXML("mettleGame"), 1550, 850);
-        scene = new Scene(loadFXML("gridPane"), 800, 600);
+        scene = new Scene(loadFXML("gridPane"), 1550, 850);
         stage.setScene(scene);
         stage.show();
     }

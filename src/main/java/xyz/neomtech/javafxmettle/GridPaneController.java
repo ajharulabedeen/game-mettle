@@ -9,10 +9,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
@@ -35,7 +38,7 @@ public class GridPaneController implements Initializable {
         Node source = (Node) e.getSource();
         Integer colIndex = GridPane.getColumnIndex(source);
         Integer rowIndex = GridPane.getRowIndex(source);
-        System.out.printf("Mouse entered cell [%d, %d]%n", colIndex.intValue(), rowIndex.intValue());
+//        System.out.printf("Mouse entered cell [%d, %d]%n", colIndex.intValue(), rowIndex.intValue());
     }
 
     //Creating the mouse event handler 
@@ -43,21 +46,30 @@ public class GridPaneController implements Initializable {
             = new EventHandler<javafx.scene.input.MouseEvent>() {
         @Override
         public void handle(javafx.scene.input.MouseEvent e) {
-            Button b = (Button) e.getSource();
-            System.out.println("Button Clicked!");
-            System.out.println("Button ID : " + b.getId());
+            ImageView imageView = (ImageView) e.getSource();
+            System.out.println("ImageView Clicked!");
+            System.out.println("ImageView ID : " + imageView.getId());
         }
     };
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        button.setId("TT");
-        Button b = new Button("My Button");
-        b.setId("b1");
-        gridPane.add(b, 0, 0);
-        b.addEventHandler(MouseEvent.MOUSE_CLICKED, eventHandler);
-        button.addEventHandler(MouseEvent.MOUSE_CLICKED, eventHandler);
-//        System.out.println(gridPane.);
+        initGridPaneWithImage();
+    }
+
+    private void initGridPaneWithImage() {
+        for (int col = 0; col < 5; col++) {
+            for (int row = 0; row < 4; row++) {
+                ImageView imageView = new ImageView();
+                imageView.setFitHeight(200);
+                imageView.setFitWidth(200);
+                imageView.setId(Integer.toString(row) + Integer.toString(col));
+                Image image = new Image("images/" + "block.png");
+                imageView.setImage(image);
+                imageView.addEventHandler(javafx.scene.input.MouseEvent.MOUSE_CLICKED, eventHandler);
+                gridPane.add(imageView, col, row);
+            }
+        }
     }
 
 }
