@@ -103,16 +103,20 @@ public class GridPaneController implements Initializable {
         });
         if (playersCurrent.name.equals("P1")) {
             player1 = playersCurrent;
-            p1Score.setText(Integer.toString(player1.getScore()));
+            p1Score.setText("Score : " + Integer.toString(player1.getScore()));
+            p1.setSelected(false);
         } else if (playersCurrent.name.equals("P2")) {
             player2 = playersCurrent;
-            p1Score.setText(Integer.toString(player2.getScore()));
+            p2Score.setText("Score : " + Integer.toString(player2.getScore()));
+            p2.setSelected(false);
         } else if (playersCurrent.name.equals("P3")) {
             player3 = playersCurrent;
-            p1Score.setText(Integer.toString(player3.getScore()));
+            p3Score.setText("Score : " + Integer.toString(player3.getScore()));
+            p3.setSelected(false);
         } else if (playersCurrent.name.equals("P4")) {
             player4 = playersCurrent;
-            p1Score.setText(Integer.toString(player4.getScore()));
+            p4Score.setText("Score : " + Integer.toString(player4.getScore()));
+            p4.setSelected(false);
         }
         cardRemains.setText(Integer.toString(cardsList.size()));
         selectedCards.clear();
