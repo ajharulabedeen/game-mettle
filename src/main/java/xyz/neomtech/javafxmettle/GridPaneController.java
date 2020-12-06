@@ -100,10 +100,10 @@ public class GridPaneController implements Initializable {
             ImageView imageView = (ImageView) e.getSource();
             int row = Integer.parseInt(imageView.getId().split("")[0]);
             int col = Integer.parseInt(imageView.getId().split("")[1]);
-            Cards cards = currentCards[row][col];
-            if (!cards.turnedOver) {
-                String imageName = cards.getImageName();
-//                Image image =
+            if (!currentCards[row][col].turnedOver) {
+                String imageName = currentCards[row][col].getImageName();
+                imageView.setImage(getImage(imageName));
+                currentCards[row][col].setTurnedOver(true);
             }
             System.out.println("ImageView Clicked!");
             System.out.println("ImageView ID : " + imageView.getId());
@@ -151,7 +151,7 @@ public class GridPaneController implements Initializable {
                 imageView.setFitHeight(200);
                 imageView.setFitWidth(200);
                 imageView.setId(Integer.toString(row) + Integer.toString(col));
-                imageView.setImage(getImage("block"));
+                imageView.setImage(getImage("block.png"));
                 imageView.addEventHandler(javafx.scene.input.MouseEvent.MOUSE_CLICKED, eventHandler);
                 gridPane.add(imageView, col, row);
             }
@@ -159,7 +159,7 @@ public class GridPaneController implements Initializable {
     }
 
     private Image getImage(String name) {
-        return new Image("images/" + name + ".png");
+        return new Image("images/" + name);
     }
 
     public void makingCards() {
