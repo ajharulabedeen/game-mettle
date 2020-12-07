@@ -103,7 +103,7 @@ public class GridPaneController implements Initializable {
             ImageView iv = (ImageView) parent.lookup("#" + c.selectedImageID);
             iv.setImage(getImage(Utils.blurImage));
             iv.setRotate(iv.getRotate() + 90);
-            playersCurrent.setScore(playersCurrent.getScore() +1);
+            playersCurrent.setScore(playersCurrent.getScore() + 1);
             matchCount++;
             if (matchCount > 2) {
                 playersCurrent.setScore(playersCurrent.getScore() + 2);
@@ -303,12 +303,13 @@ public class GridPaneController implements Initializable {
     public void makingCards() {
         Utils.imageName.forEach(iName -> {
 //            circle_L_blue_angle.png //ref values.
-            String[] s = iName.split("_");
+//        pattern -> type(shape) -> color -> size.
+            String[] s = iName.split("");
             Cards card = new Cards();
-            card.setShape(setShape(s[0]));
-            card.setSize(setSize(s[1]));
+            card.setPattern(setPattern(s[0]));
+            card.setShape(setShape(s[1]));
             card.setColor(setColor(s[2]));
-            card.setPattern(setPattern(s[3]));
+            card.setSize(setSize(s[3]));
             card.setImageName(iName);
             cardsList.add(card);
         });
@@ -316,7 +317,8 @@ public class GridPaneController implements Initializable {
     }
 
     private Enum setPattern(String newString) {
-        String s = newString.replace(".png", "");
+        String imageExtension = ".jpg";
+        String s = newString.replace(imageExtension, "");
         Enum pattern = null;
         if (s.equals(Pattern.angle.toString())) {
             pattern = Pattern.angle;
@@ -324,6 +326,12 @@ public class GridPaneController implements Initializable {
             pattern = Pattern.hori;
         } else if (s.equals(Pattern.star.toString())) {
             pattern = Pattern.star;
+        } else if (s.equals(Pattern.S.toString())) {
+            pattern = Pattern.S;
+        } else if (s.equals(Pattern.L.toString())) {
+            pattern = Pattern.L;
+        } else if (s.equals(Pattern.D.toString())) {
+            pattern = Pattern.D;
         }
         return pattern;
     }
@@ -336,6 +344,12 @@ public class GridPaneController implements Initializable {
             color = xyz.neomtech.javafxmettle.utils.Color.red;
         } else if (s.equals(xyz.neomtech.javafxmettle.utils.Color.green.toString())) {
             color = xyz.neomtech.javafxmettle.utils.Color.green;
+        } else if (s.equals(xyz.neomtech.javafxmettle.utils.Color.B.toString())) {
+            color = xyz.neomtech.javafxmettle.utils.Color.B;
+        } else if (s.equals(xyz.neomtech.javafxmettle.utils.Color.O.toString())) {
+            color = xyz.neomtech.javafxmettle.utils.Color.O;
+        } else if (s.equals(xyz.neomtech.javafxmettle.utils.Color.Y.toString())) {
+            color = xyz.neomtech.javafxmettle.utils.Color.Y;
         }
         return color;
     }
@@ -348,6 +362,12 @@ public class GridPaneController implements Initializable {
             size = Size.m;
         } else if (s.equals("s")) {
             size = Size.s;
+        } else if (s.equals("S")) {
+            size = Size.S;
+        } else if (s.equals("M")) {
+            size = Size.M;
+        } else if (s.equals("B")) {
+            size = Size.B;
         }
         return size;
     }
@@ -359,6 +379,14 @@ public class GridPaneController implements Initializable {
         } else if (s.equals("heart")) {
             shape = Shape.heart;
         } else if (s.equals("star")) {
+            shape = Shape.star;
+        }else if (s.equals("star")) {
+            shape = Shape.star;
+        }else if (s.equals("J")) {
+            shape = Shape.star;
+        }else if (s.equals("C")) {
+            shape = Shape.star;
+        }else if (s.equals("B")) {
             shape = Shape.star;
         }
         return shape;
