@@ -12,6 +12,7 @@ import javafx.scene.paint.Color;
  * @author Dell
  */
 public enum Shape {
+    J, C, B,
     circle,
     star,
     heart;

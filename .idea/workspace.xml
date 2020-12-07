@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java" afterDir="false" />
-    </list>
+    <list default="true" id="0b237f2c-64b5-4e28-8de2-b8a13cd5160b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,8 +112,8 @@
       <file leaf-file-name="GridPaneController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+            <state relative-caret-position="114">
+              <caret line="307" column="14" lean-forward="true" selection-start-line="307" selection-start-column="14" selection-end-line="307" selection-end-column="14" />
               <folding>
                 <element signature="e#1838#1855#0" expanded="true" />
                 <element signature="e#1886#1903#0" expanded="true" />
@@ -390,8 +387,12 @@
                 <element signature="e#11545#11546#0" expanded="true" />
                 <element signature="e#6062#6092#1" expanded="true" />
                 <element signature="e#6105#6130#1" expanded="true" />
+                <element signature="e#11416#11440#0" expanded="true" />
+                <element signature="e#11416#11440#0" expanded="true" />
                 <element signature="e#6517#6558#1" expanded="true" />
                 <element signature="e#6567#6587#1" expanded="true" />
+                <element signature="e#11695#11967#0" expanded="true" />
+                <element signature="e#11695#11967#0" expanded="true" />
                 <element signature="e#6946#6964#1" expanded="true" />
                 <element signature="e#12076#12139#0" expanded="true" />
                 <element signature="e#12076#12139#0" expanded="true" />
@@ -574,24 +575,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaFXMettle" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaFXMettle" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javafxmettle" type="462c0819:PsiDirectoryNode" />
-              <item name="GridPaneController" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="javaFXMettle" type="b2602c69:ProjectViewProjectNode" />
@@ -823,7 +806,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57497000" />
+    <option name="totallyTimeSpent" value="59252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -836,7 +819,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="RestServices" order="3" />
@@ -858,7 +840,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32909605" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3601695" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.16666667" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23587571" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22214764" />
       <window_info anchor="right" id="ReST Console" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1467,8 +1449,12 @@
             <element signature="e#11545#11546#0" expanded="true" />
             <element signature="e#6062#6092#1" expanded="true" />
             <element signature="e#6105#6130#1" expanded="true" />
+            <element signature="e#11416#11440#0" expanded="true" />
+            <element signature="e#11416#11440#0" expanded="true" />
             <element signature="e#6517#6558#1" expanded="true" />
             <element signature="e#6567#6587#1" expanded="true" />
+            <element signature="e#11695#11967#0" expanded="true" />
+            <element signature="e#11695#11967#0" expanded="true" />
             <element signature="e#6946#6964#1" expanded="true" />
             <element signature="e#12076#12139#0" expanded="true" />
             <element signature="e#12076#12139#0" expanded="true" />
@@ -2017,8 +2003,12 @@
             <element signature="e#11545#11546#0" expanded="true" />
             <element signature="e#6062#6092#1" expanded="true" />
             <element signature="e#6105#6130#1" expanded="true" />
+            <element signature="e#11416#11440#0" expanded="true" />
+            <element signature="e#11416#11440#0" expanded="true" />
             <element signature="e#6517#6558#1" expanded="true" />
             <element signature="e#6567#6587#1" expanded="true" />
+            <element signature="e#11695#11967#0" expanded="true" />
+            <element signature="e#11695#11967#0" expanded="true" />
             <element signature="e#6946#6964#1" expanded="true" />
             <element signature="e#12076#12139#0" expanded="true" />
             <element signature="e#12076#12139#0" expanded="true" />
@@ -2261,8 +2251,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xyz/neomtech/javafxmettle/GridPaneController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        <state relative-caret-position="114">
+          <caret line="307" column="14" lean-forward="true" selection-start-line="307" selection-start-column="14" selection-end-line="307" selection-end-column="14" />
           <folding>
             <element signature="e#1838#1855#0" expanded="true" />
             <element signature="e#1886#1903#0" expanded="true" />
@@ -2536,8 +2526,12 @@
             <element signature="e#11545#11546#0" expanded="true" />
             <element signature="e#6062#6092#1" expanded="true" />
             <element signature="e#6105#6130#1" expanded="true" />
+            <element signature="e#11416#11440#0" expanded="true" />
+            <element signature="e#11416#11440#0" expanded="true" />
             <element signature="e#6517#6558#1" expanded="true" />
             <element signature="e#6567#6587#1" expanded="true" />
+            <element signature="e#11695#11967#0" expanded="true" />
+            <element signature="e#11695#11967#0" expanded="true" />
             <element signature="e#6946#6964#1" expanded="true" />
             <element signature="e#12076#12139#0" expanded="true" />
             <element signature="e#12076#12139#0" expanded="true" />

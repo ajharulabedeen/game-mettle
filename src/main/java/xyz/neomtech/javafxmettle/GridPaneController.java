@@ -102,6 +102,7 @@ public class GridPaneController implements Initializable {
             Parent parent = (Parent) gridPane.getParent();
             ImageView iv = (ImageView) parent.lookup("#" + c.selectedImageID);
             iv.setImage(getImage(Utils.blurImage));
+            iv.setRotate(iv.getRotate() + 90);
             playersCurrent.setScore(playersCurrent.getScore() +1);
             matchCount++;
             if (matchCount > 2) {
@@ -211,6 +212,7 @@ public class GridPaneController implements Initializable {
                                 Parent parent = gridPane.getParent(); // the Parent (or Scene) that contains the TextFields
                                 ImageView iv = (ImageView) parent.lookup("#" + c.getSelectedImageID());
                                 iv.setImage(getImage(Utils.blurImage));
+                                iv.setRotate(iv.getRotate() + 90);
                                 currentCards[c.row][c.column].setTurnedOver(false);
                             }
                             //TODO:REMOVE

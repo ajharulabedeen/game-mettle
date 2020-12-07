@@ -10,6 +10,7 @@ package xyz.neomtech.javafxmettle.utils;
  * @author Dell
  */
 public enum Size {
+    S, M, B,
     L,
     m,
     s

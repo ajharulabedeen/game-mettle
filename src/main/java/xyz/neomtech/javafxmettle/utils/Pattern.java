@@ -10,6 +10,7 @@ package xyz.neomtech.javafxmettle.utils;
  * @author Dell
  */
 public enum Pattern {
+    S, L, D,
     hori,
     angle,
     star
