@@ -102,7 +102,7 @@ public class GridPaneController implements Initializable {
             Parent parent = (Parent) gridPane.getParent();
             ImageView iv = (ImageView) parent.lookup("#" + c.selectedImageID);
             iv.setImage(getImage(Utils.blurImage));
-            iv.setRotate(iv.getRotate() + 90);
+//            iv.setRotate(iv.getRotate() + 90);
             playersCurrent.setScore(playersCurrent.getScore() + 1);
             matchCount++;
             if (matchCount > 2) {
@@ -212,7 +212,7 @@ public class GridPaneController implements Initializable {
                                 Parent parent = gridPane.getParent(); // the Parent (or Scene) that contains the TextFields
                                 ImageView iv = (ImageView) parent.lookup("#" + c.getSelectedImageID());
                                 iv.setImage(getImage(Utils.blurImage));
-                                iv.setRotate(iv.getRotate() + 90);
+//                                iv.setRotate(iv.getRotate() + 90);
                                 currentCards[c.row][c.column].setTurnedOver(false);
                             }
                             //TODO:REMOVE
@@ -289,7 +289,7 @@ public class GridPaneController implements Initializable {
                 imageView.setId(Integer.toString(row) + Integer.toString(col));
 //                imageView.setImage(getImage("block.png"));
                 imageView.setImage(getImage("block.jpg"));
-                imageView.setRotate(imageView.getRotate() + 90);
+//                imageView.setRotate(imageView.getRotate() + 90);
                 imageView.addEventHandler(javafx.scene.input.MouseEvent.MOUSE_CLICKED, eventHandler);
                 gridPane.add(imageView, col, row);
             }
@@ -383,11 +383,11 @@ public class GridPaneController implements Initializable {
         }else if (s.equals("star")) {
             shape = Shape.star;
         }else if (s.equals("J")) {
-            shape = Shape.star;
+            shape = Shape.J;
         }else if (s.equals("C")) {
-            shape = Shape.star;
+            shape = Shape.C;
         }else if (s.equals("B")) {
-            shape = Shape.star;
+            shape = Shape.B;
         }
         return shape;
     }
